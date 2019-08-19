@@ -264,7 +264,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -284,7 +284,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -303,7 +303,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -323,7 +323,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -343,7 +343,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
