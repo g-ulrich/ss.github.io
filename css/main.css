@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-border-radius:3px;}
+border-radius:2px;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-image: url('../images/smallstripes2.gif');
 }
 
 ol, ul {
@@ -259,7 +260,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.container {
-				width: calc(100% - 40px);
+				width: calc(100% - 1px);
 			}
 
 		}
@@ -1344,9 +1345,10 @@ input, select, textarea {
 
 .boxSide {
 	background: #ffffff;
-	border: solid 1px #ccc;
 	max-height:500px;
-	max-width:400px
+	max-width:400px;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	margin-left:10px
 }
 
 .o-h{
@@ -1354,8 +1356,11 @@ input, select, textarea {
 }
 
 	.boxArticle {
-		background: #ffffff;
-		padding: 2.75em 1.75em 2.75em 1.75em;
+		background-color: #ffffff;
+		padding: 2.75em 0em 0em 0em;
+	}
+	.boxArticle .info{
+		padding: 2em 2em;
 	}
 
 		.boxArticle .image.featured {
@@ -2096,7 +2101,8 @@ display:none
   }
   .article-title {
     position: relative;
-	padding:0px 5px 
+	padding:0px 5px;
+	background-color:#fff
   }
 
   .article-title button{
@@ -2110,6 +2116,7 @@ display:none
 	#footer {
 		position: relative;
 		color: #858484;
+		background-color:#fff;
 	}
 	#footer .social-icons{
 		display:block;
@@ -2662,6 +2669,7 @@ display:none
 		
 
 		/* Header */
+		
 				#header h1 {
 					letter-spacing: -0.04em;
 					font-size: .9em
@@ -2755,7 +2763,9 @@ display:none
 
 
 	/* extra */
-
+.float-right{
+	float:right
+}
 	.position-absolute{
 		position:absolute
 	}

@@ -113,6 +113,19 @@ If Not "%MoY:~,1%"=="1" (
     If "%MoY:~-1%"=="3" Set "MaS=%MoY%rd"&Set "ending=rd")
 If Not Defined MaS Set "MaS=%MoY%"&Set "ending=th"
 If "%MaS:~,1%"=="0" Set "MaS=%MaS:~1%"
+
+for /f "tokens=1-3 delims=:,. " %%A in ("%time%") do (
+  set "Hour=%%A"
+  set "Min=%%B"
+)
+set /a Hour = Hour %% 12
+if %Hour%==0 set "Hour=12"
+
+FOR /F "skip=1" %%A IN ('WMIC OS GET LOCALDATETIME') DO (SET "t=%%A" & GOTO break_1)
+:break_1
+SET "m=%t:~10,2%" & SET "h=%t:~8,2%"
+IF !h! GTR 11 (SET /A "h-=12" & SET "ap=A" & IF "!h!"=="0" (SET "h=00") ELSE (IF !h! LEQ 9 (SET "h=0!h!"))) ELSE (SET "ap=P")
+
 ::body
 echo 	^<body^> >> %htmlfilename%
 echo 		^<div id^="page-wrapper"^> >> %htmlfilename%
@@ -124,12 +137,14 @@ echo 				^<div class^="container"^> >> %htmlfilename%
 echo 					^<div class^="row"^> >> %htmlfilename%
 echo 						^<div class^="col-8 col-12-medium"^> >> %htmlfilename%
 echo 							^<^!-- Content --^> >> %htmlfilename%
-echo 							^<article class^="boxArticle post"^> >> %htmlfilename%
+echo 							^<article class^="boxArticle post shadow-sm"^> >> %htmlfilename%
 echo 							^<a href^="%imghref%" class^="image featured"^>^<img src^="%image%" alt^="%altimg%" /^>^</a^> >> %htmlfilename%
+echo								^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^> >> %htmlfilename%
+echo								^<section class^="info"^> >> %htmlfilename%
 echo								^<header^> >> %htmlfilename%
 echo                                    ^<h2^>%articletitle%^</h2^> >> %htmlfilename%
 echo									^<div class^="article-author-time m-3"^> >> %htmlfilename%
-echo									^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %htmlfilename%
+echo									^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^</div^> >> %htmlfilename%
 echo                                ^</header^> >> %htmlfilename%
 
 ::article content
@@ -142,9 +157,8 @@ echo The file you chose:
 for %%F in ("%file%") do echo %%~nxF
 type %file% >> %htmlfilename%
 
-
-
 ::footer & javascript
+echo								^</section^> >> %htmlfilename%
 echo 							^</article^> >> %htmlfilename%
 echo 						^</div^> >> %htmlfilename%
 echo 						^<^!-- Sidebar --^> >> %htmlfilename%
@@ -158,11 +172,17 @@ echo 								^<ul id^="articleList" style^="margin:20px"^> >> %htmlfilename%
 echo 									^<div id^="web-rightSideBar"^>^</div^> >> %htmlfilename%
 echo 								^</ul^> >> %htmlfilename%
 echo 							^</section^> >> %htmlfilename%
-echo 							^<section class^="boxSide"^> >> %htmlfilename%
-echo 								^<header style^="padding:20px"^> >> %htmlfilename%
-echo 									^<h4^>More...^</h4^> >> %htmlfilename%
-echo 								^</header^> >> %htmlfilename%
-echo 							^</section^> >> %htmlfilename%
+echo							^<section class^="boxSide"^> >> %htmlfilename%
+echo								^<header style^="padding:20px"^> >> %htmlfilename% 
+echo									^<h4^>Similar Resources:^</h4^> >> %htmlfilename%
+echo								^</header^> >> %htmlfilename%
+echo							^<aside^> >> %htmlfilename%
+echo								^<ul style^="margin:20px"^> >> %htmlfilename%
+echo									^<div id^="web-resources"^>^</div^> >> %htmlfilename%
+echo								^</ul^> >> %htmlfilename%
+echo								^<button style^="left:38%%;position:relative" class^="mb-3"^>See More^</button^> >> %htmlfilename%
+echo							^</aside^> >> %htmlfilename%
+echo							^</section^> >> %htmlfilename% 
 echo 						^</div^> >> %htmlfilename%
 echo 					^</div^> >> %htmlfilename%
 echo 				^</div^> >> %htmlfilename%
@@ -173,10 +193,9 @@ echo 		^</div^> >> %htmlfilename%
 echo		^<^!-- script --^> >> %htmlfilename%
 echo 		^<script src^="js/jquery.min.js"^>^</script^> >> %htmlfilename%
 echo 		^<script src^="js/main.js"^>^</script^> >> %htmlfilename%
-echo 		^<script src^="js/articleOnLoad.js"^>^</script^> >> %htmlfilename%
+echo 		^<script src^="js/post.js"^>^</script^> >> %htmlfilename%
 echo 	^</body^> >> %htmlfilename%
 echo ^</html^> >> %htmlfilename%
-
 
 
 ::Question to continue
