@@ -1,10 +1,10 @@
 @echo off
 :LOOP
-set /p articletitle="Article Title: "
+set /p articletitle="Article Title, without ! ?: "
 set /p authorname="Enter author name (e.g. Gabriel Ulrich): "
 set /p description="Paste article description here: "
-set "source_folder=C:\WEBSITES\thecrux.github.io\ss\images"
-set "result_folder_1=C:\WEBSITES\thecrux.github.io\ss\images\small-images"
+set "source_folder=C:\WEBSITES\ss.github.io\images"
+set "result_folder_1=C:\WEBSITES\ss.github.io\images\small-images"
 set htmlfile=%articleTitle: =-%
 set htmlfileext=%htmlfile%.html
 set filepath=common\
@@ -139,12 +139,11 @@ echo 						^<div class^="col-8 col-12-medium"^> >> %htmlfilename%
 echo 							^<^!-- Content --^> >> %htmlfilename%
 echo 							^<article class^="boxArticle post shadow-sm"^> >> %htmlfilename%
 echo 							^<a href^="%imghref%" class^="image featured"^>^<img src^="%image%" alt^="%altimg%" /^>^</a^> >> %htmlfilename%
-echo								^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^> >> %htmlfilename%
+echo								^<div class^="post-author-time"^> >> %htmlfilename%
+echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %htmlfilename%
 echo								^<section class^="info"^> >> %htmlfilename%
 echo								^<header^> >> %htmlfilename%
 echo                                    ^<h2^>%articletitle%^</h2^> >> %htmlfilename%
-echo									^<div class^="article-author-time m-3"^> >> %htmlfilename%
-echo									^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^</div^> >> %htmlfilename%
 echo                                ^</header^> >> %htmlfilename%
 
 ::article content
@@ -265,7 +264,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -285,7 +284,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -304,7 +303,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -324,7 +323,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%
@@ -344,7 +343,7 @@ echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %article
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^>^</time^>^</div^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
 echo				^</div^> >> %articleIndex%
 echo			^</div^> >> %articleIndex%
 echo 	^</a^> >> %articleIndex%

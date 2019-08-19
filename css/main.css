@@ -1344,7 +1344,7 @@ input, select, textarea {
 /* Box */
 
 .boxSide {
-	background: #ffffff;
+	background-color: #ffffff;
 	max-height:500px;
 	max-width:400px;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
@@ -1374,9 +1374,10 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-		.boxArticle.post h2 {
+		.boxArticle.post h1 {
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
+			line-height: .9em
 		}
 
 		.boxArticle.post header > p {
@@ -1389,7 +1390,7 @@ input, select, textarea {
 		}
 
 		.boxSide > header{
-			background-color:#DEDEDE;
+			background-color:#eeeeee;
 		}
 
 		boxSide li a{
@@ -2034,11 +2035,20 @@ input, select, textarea {
 	  #main .article-author-time{
 		  font-size:15px;
 		  color:rgba(0, 0, 0, 0.5);
-		  margin:0px 0px 0px 10px;
+		  padding:0px 0px 5px 10px;
 	  }
 	  #main .article-author-time img{
 		margin:0px 0px -10px 0px;
 	}
+	#main .post-author-time{
+		font-size:15px;
+		color:#747474;
+		background-color:#eeeeee;
+		padding:10px;
+	}
+	#main .post-author-time img{
+	  margin:0px 0px -10px 0px;
+  }
 
 	  #main .article-title p{
 		padding:0px 10px;
@@ -2625,6 +2635,9 @@ display:none
 					display:none
 				  }
 				  
+				  .boxArticle .info{
+					padding: 1em 1em;
+				}
 
 		/* Divided */
 
