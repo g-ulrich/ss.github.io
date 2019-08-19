@@ -1,0 +1,185 @@
+#header  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: 0px 5px 10px lightgray;
+  }
+  
+  #header > div > a{
+    float: right;
+    cursor: pointer
+  }
+  
+  #header > div > a {
+    color:#000;
+    display:block;
+	display: block;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+  }
+
+  #header > div > a:hover {
+    background-color:#dedede
+  }
+
+  .nav-title{
+	border-bottom: 0px solid #fff;
+	background-color:#26619c;
+	color:#fff;
+    font-size: 1.75em;
+    float:left;
+    padding: 14px 25px;
+    text-decoration:none;
+    margin-bottom:-3px
+}
+
+#header h1{
+    color:#fff;display:inline
+}
+
+  #header img{
+    height:35px;
+    width:auto;
+    border-radius:5px;
+    margin-bottom:-7px;
+    margin-left:8px
+  }
+
+  /*dropdown*/
+  .dropdown-content {
+    display:none;
+    left: 0;
+    background-color: #fff;
+    position: absolute;
+    margin:61.3px 0px 0px 0px;
+    width:100%;
+    z-index:9999;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-top:1px lightgray solid
+  }
+
+  .dropdown-content-arrow{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-weight:700;
+    font-size:20px;
+    letter-spacing:.05em;
+    text-align:left
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+ 
+  /* .dropdown:hover .dropdown-content {display: block;} */
+  
+
+  /*menu*/
+  #side-menu{
+    cursor:pointer;
+    padding: 16px 25px 10px 25px; 
+    color:#000;
+    float:right
+}
+
+:root {
+  --hamburger_w: 20px;
+  --hamburger_h: 3px;
+  --hamburger_halfH: calc(var(--hamburger_h) / 2);
+  --hamburger_mBetweenLine: 5px;
+  --search_w: 18px;
+  --search_h: 3px;
+  --search_halfH: calc(var(--search_h) / 2);
+  --search_mBetweenLine: 5px;
+}
+#hamburger {display: none;}
+[for="hamburger"] {
+  margin-top:-5px;
+  display: inline-block;
+  width: var(--hamburger_w);
+  height: calc(var(--hamburger_h) * 3 + var(--hamburger_mBetweenLine) * 2);
+  position: relative;
+  cursor: pointer;
+  transition: .4s;
+}
+.hamburger-line {
+  display: block;
+  width: var(--hamburger_w);
+  height: var(--hamburger_h);
+  background: #000;
+  border-radius: var(--hamburger_halfH);
+  position: absolute;
+  left: 0;
+}
+.hamburger-line:nth-of-type(1) {top: 0;}
+.hamburger-line:nth-of-type(2) {top: calc(50% - var(--hamburger_halfH));}
+.hamburger-line:nth-of-type(3) {top: calc(100% - var(--hamburger_h));}
+.hamburger-line:nth-of-type(1),
+.hamburger-line:nth-of-type(3) {transition: transform .2s, top .2s .2s;}
+.hamburger-line:nth-of-type(2) {transition: 0s .2s;}
+#hamburger:checked ~ [for="hamburger"] {height: var(--hamburger_w);}
+#hamburger:checked ~ [for="hamburger"] .hamburger-line:nth-of-type(2) {
+  transform: scale(0);
+  transition: 0s .2s;
+}
+#hamburger:checked ~ [for="hamburger"] .hamburger-line:nth-of-type(1),
+#hamburger:checked ~ [for="hamburger"] .hamburger-line:nth-of-type(3) {
+  top: calc(50% - var(--hamburger_halfH));
+  transition: top .2s, transform .2s .2s;
+}
+#hamburger:checked ~ [for="hamburger"] .hamburger-line:nth-of-type(1) {transform: rotate(45deg);}
+#hamburger:checked ~ [for="hamburger"] .hamburger-line:nth-of-type(3) {transform: rotate(-45deg);}
+
+
+/*search burger*/
+#search {display: none;}
+[for="search"] {
+  display: inline-block;
+  width: var(--search_w);
+  height: calc(var(--search_h) * 3 + var(--search_mBetweenLine) * 2);
+  position: relative;
+  cursor: pointer;
+  transition: .4s;
+  z-index:999;
+}
+.search-line {
+  display: block;
+  width: var(--search_w);
+  height: var(--search_h);
+  background: #fff;
+  border-radius: var(--search_halfH);
+  position: absolute;
+  left: 0;
+}
+.search-line:nth-of-type(1) {top: 0;}
+.search-line:nth-of-type(2) {top: calc(50% - var(--search_halfH));}
+.search-line:nth-of-type(3) {top: calc(100% - var(--search_h));}
+.search-line:nth-of-type(1),
+.search-line:nth-of-type(3) {transition: transform .2s, top .2s .2s;}
+.search-line:nth-of-type(2) {transition: 0s .2s;}
+#search:checked ~ [for="search"] {height: var(--search_w);}
+#search:checked ~ [for="search"] .search-line:nth-of-type(2) {
+  transform: scale(0);
+  transition: 0s .2s;
+}
+#search:checked ~ [for="search"] .search-line:nth-of-type(1),
+#search:checked ~ [for="search"] .search-line:nth-of-type(3) {
+  top: calc(50% - var(--search_halfH));
+  transition: top .2s, transform .2s .2s;
+}
+#search:checked ~ [for="search"] .search-line:nth-of-type(1) {transform: rotate(45deg);}
+#search:checked ~ [for="search"] .search-line:nth-of-type(3) {transform: rotate(-45deg);}
