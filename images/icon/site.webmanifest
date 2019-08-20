@@ -1,0 +1,19 @@
+{
+    "name": "ServingSilent",
+    "short_name": "ServingSilent",
+    "icons": [
+        {
+            "src": "/images/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#26619c",
+    "background_color": "#26619c",
+    "display": "standalone"
+}
