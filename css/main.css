@@ -103,7 +103,7 @@ input, select, textarea {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #5d5d5d;
-		font-size: 14pt;
+		font-size: 16pt;
 		line-height: 1.75em;
 	}
 
@@ -187,7 +187,6 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #747474;
 		font-weight: 700;
 	}
 
@@ -1348,7 +1347,7 @@ input, select, textarea {
 	max-height:500px;
 	max-width:400px;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-	margin-left:10px
+	margin:0px 10px
 }
 
 .o-h{

@@ -8,12 +8,6 @@ $(document).ready(function(){
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });
      });
-     $("#articleSearch").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#articleList li").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-      });
-   });
 });
 
 var cards = $(".lightBorder");

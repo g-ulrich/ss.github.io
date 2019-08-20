@@ -1,6 +1,6 @@
 @echo off
 :LOOP
-set /p articletitle="Article Title, without ! ?: "
+set /p articletitle="Article Title, without ! ? add it later: "
 set /p authorname="Enter author name (e.g. Gabriel Ulrich): "
 set /p description="Paste article description here: "
 set "source_folder=C:\WEBSITES\ss.github.io\images"
@@ -143,7 +143,7 @@ echo								^<div class^="post-author-time"^> >> %htmlfilename%
 echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %htmlfilename%
 echo								^<section class^="info"^> >> %htmlfilename%
 echo								^<header^> >> %htmlfilename%
-echo                                    ^<h2^>%articletitle%^</h2^> >> %htmlfilename%
+echo                                    ^<h1^>%articletitle%^</h1^> >> %htmlfilename%
 echo                                ^</header^> >> %htmlfilename%
 
 ::article content
