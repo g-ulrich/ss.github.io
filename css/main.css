@@ -1990,11 +1990,11 @@ input, select, textarea {
 		margin:5px
 	}
 
-	#main .lightBorder{
+	 .lightBorder{
 		border:solid #f7f7f7 1px
 	}
 
-	#main .lightBorder:hover{
+	 .lightBorder:hover{
 		border:solid #b1b1b1 1px
 	}
 	
@@ -2027,42 +2027,33 @@ input, select, textarea {
 		margin:0px 0px -3px 0px
 	}
 
-	#main .article-title div {
+	.article-title div {
 		overflow: hidden;
 		position: relative;
+		padding:0px 10px;
 	  }
-	  #main .article-author-time{
+	 .article-author-time{
 		  font-size:15px;
 		  color:rgba(0, 0, 0, 0.5);
-		  padding:0px 10px 5px 10px;
+		  padding:0px 0px 5px 0px;
 	  }
-	  #main .article-author-time img{
+	.article-author-time img{
 		margin:0px 0px -10px 0px;
 	}
-	#main .post-author-time{
+	.post-author-time{
 		font-size:15px;
 		color:#747474;
 		background-color:#eeeeee;
 		padding:10px;
 	}
-	#main .post-author-time img{
+	.post-author-time img{
 	  margin:0px 0px -10px 0px;
   }
 
-	  #main .article-title p{
-		padding:0px 10px;
+	  .article-title p{
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 2;
-	  }
-	  
-	  #main .article-title button{
-		  position:absolute;
-		  right:0;
-		  bottom:0;
-		  z-index:999;
-		  margin:10px;
-		 box-shadow:0px 0px 50px rgb(146, 146, 146);
 	  }
 
 	  .article-descriptor{
@@ -2074,7 +2065,7 @@ input, select, textarea {
 		color:rgba(255, 255, 255, 0.912);
 		font-size:15px;
 		line-height:1.2;
-		padding:3px
+		padding:3px !important
 	  }
 
 	  .article-descriptor-n-img{
@@ -2087,7 +2078,11 @@ input, select, textarea {
 		color:rgba(255, 255, 255, 0.912);
 		font-size:15px;
 		line-height:1.2;
-		padding:3px
+		padding:3px !important;
+	  }
+	  .post-bg{
+		background-image: url('../images/ssmallstripes.gif');
+		padding:0 !important;
 	  }
 
 	  .author-icon{
@@ -2104,9 +2099,6 @@ border-bottom:solid 2px #26619c;
 width:40%
 }
 
-#footer .article-d-none{
-display:none
-}
 .article-con {
     position: relative;
 	color: #000;
@@ -2123,7 +2115,6 @@ display:none
   }
   .article-title {
     position: relative;
-	padding:0px 5px;
 	background-color:#fff
   }
 
