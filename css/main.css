@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-image: url('../images/smallstripes   .gif');
+	background-image: url('../images/smallstripes.gif');
 }
 
 ol, ul {
@@ -2069,6 +2069,19 @@ input, select, textarea {
 		position: absolute;
 		top: 0;
 		left: 0;
+		margin:5px;
+		background-color:rgba(0, 0, 0, 0.282);
+		color:rgba(255, 255, 255, 0.912);
+		font-size:15px;
+		line-height:1.2;
+		padding:3px
+	  }
+
+	  .article-descriptor-n-img{
+		display:inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
 		margin:5px;
 		background-color:rgba(0, 0, 0, 0.282);
 		color:rgba(255, 255, 255, 0.912);
