@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("#web-rightSideBar").load("common/search.html");
     $("#web-resources").load("common/resources.html");
-    $("#web-footer").load("common/footer.html");
     $("#articleSearchInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
         $("#articleList li").filter(function() {

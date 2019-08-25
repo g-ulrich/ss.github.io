@@ -121,10 +121,7 @@ for /f "tokens=1-3 delims=:,. " %%A in ("%time%") do (
 set /a Hour = Hour %% 12
 if %Hour%==0 set "Hour=12"
 
-FOR /F "skip=1" %%A IN ('WMIC OS GET LOCALDATETIME') DO (SET "t=%%A" & GOTO break_1)
-:break_1
-SET "m=%t:~10,2%" & SET "h=%t:~8,2%"
-IF !h! GTR 11 (SET /A "h-=12" & SET "ap=A" & IF "!h!"=="0" (SET "h=00") ELSE (IF !h! LEQ 9 (SET "h=0!h!"))) ELSE (SET "ap=P")
+set /p ap="Enter AM or PM for time stamp: "
 
 ::body
 echo 	^<body^> >> %htmlfilename%
@@ -140,7 +137,7 @@ echo 							^<^!-- Content --^> >> %htmlfilename%
 echo 							^<article class^="boxArticle post shadow-sm"^> >> %htmlfilename%
 echo 							^<a href^="%imghref%" class^="image featured"^>^<img src^="%image%" alt^="%altimg%" /^>^</a^> >> %htmlfilename%
 echo								^<div class^="post-author-time"^> >> %htmlfilename%
-echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %htmlfilename%
+echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%^</time^>^</div^> >> %htmlfilename%
 echo								^<section class^="info"^> >> %htmlfilename%
 echo								^<header^> >> %htmlfilename%
 echo                                    ^<h1^>%articletitle%^</h1^> >> %htmlfilename%
@@ -173,7 +170,7 @@ echo 								^</ul^> >> %htmlfilename%
 echo 							^</section^> >> %htmlfilename%
 echo							^<section class^="boxSide"^> >> %htmlfilename%
 echo								^<header style^="padding:20px"^> >> %htmlfilename% 
-echo									^<h4^>Similar Resources:^</h4^> >> %htmlfilename%
+echo									^<h4^>Resources:^</h4^> >> %htmlfilename%
 echo								^</header^> >> %htmlfilename%
 echo							^<aside^> >> %htmlfilename%
 echo								^<ul style^="margin:20px"^> >> %htmlfilename%
@@ -254,112 +251,96 @@ ECHO "%articlechoice%" is not valid, try again
 goto start
 
 :article
-@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
-echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
-echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<img class^="col-3 col-4-medium col-12-small o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
-echo			^<div class^="article-descriptor"^>^<i class^="fas fa-newspaper"^>^</i^> Article^</div^> >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium col-12-small"^> >> %articleIndex%
-echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
-echo					^</div^> >> %articleIndex%
-echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
-echo				^</div^> >> %articleIndex%
-echo			^</div^> >> %articleIndex%
-echo 	^</a^> >> %articleIndex%
-echo ^</article^> >> %articleIndex%
-
-
-
+set "postdescriptor=^<i class^="fas fa-newspaper"^>^</i^> Article^</div^>"
 goto end
+
 :video
-@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
-echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
-echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<img class^="col-3 col-4-medium col-12-small o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
-echo			^<div class^="article-descriptor"^>^<i class^="fab fa-youtube"^>^</i^> Video^</div^> >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium col-12-small"^> >> %articleIndex%
-echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
-echo					^</div^> >> %articleIndex%
-echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
-echo				^</div^> >> %articleIndex%
-echo			^</div^> >> %articleIndex%
-echo 	^</a^> >> %articleIndex%
-echo ^</article^> >> %articleIndex%
-
-
+set "postdescriptor=^<i class^="fab fa-youtube"^>^</i^> Video^</div^>"
 goto end
+
 :audio
-@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
-echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
-echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<img class^="col-3 col-4-medium col-12-small o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
-echo			^<div class^="article-descriptor"^>^<i class^="fas fa-volume-up"^>^</i^> Audio^</div^> >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium col-12-small"^> >> %articleIndex%
-echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
-echo					^</div^> >> %articleIndex%
-echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
-echo				^</div^> >> %articleIndex%
-echo			^</div^> >> %articleIndex%
-echo 	^</a^> >> %articleIndex%
-echo ^</article^> >> %articleIndex%
-
-
-
+set "postdescriptor=^<i class^="fas fa-volume-up"^>^</i^> Audio^</div^>"
 goto end
+
 :pictures
-@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
-echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
-echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<img class^="col-3 col-4-medium col-12-small o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
-echo			^<div class^="article-descriptor"^>^<i class^="fas fa-images"^>^</i^> Pictures^</div^> >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium col-12-small"^> >> %articleIndex%
-echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
-echo					^</div^> >> %articleIndex%
-echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
-echo				^</div^> >> %articleIndex%
-echo			^</div^> >> %articleIndex%
-echo 	^</a^> >> %articleIndex%
-echo ^</article^> >> %articleIndex%
-
-
-
+set "postdescriptor=^<i class^="fas fa-images"^>^</i^> Pictures^</div^>"
 goto end
-:random
-@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
-echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
-echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<img class^="col-3 col-4-medium col-12-small o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
-echo			^<div class^="article-descriptor"^>^<i class^="fas fa-comment-alt"^>^</i^> Random^</div^> >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium col-12-small"^> >> %articleIndex%
-echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
-echo					^</div^> >> %articleIndex%
-echo 					^<div class^="article-author-time"^> >> %articleIndex% 
-echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%M^</time^>^</div^> >> %articleIndex% 
-echo				^</div^> >> %articleIndex%
-echo			^</div^> >> %articleIndex%
-echo 	^</a^> >> %articleIndex%
-echo ^</article^> >> %articleIndex%
 
+:random
+set "postdescriptor=^<i class^="fas fa-comment-alt"^>^</i^> Random^</div^>"
 goto end
 :end
+
+
+
+
+:start1
+echo CHOOSE YOUR POST DESCRIPTOR:
+ECHO 1. With Image - Long
+ECHO 2. No Image - Long 
+set articlechoice=
+set /p postchoice=Choose which one you want (e.g. 1, 2, 3, 4, 5):
+if not '%postchoice%'=='' set postchoice=%postchoice:~0,1%
+if '%postchoice%'=='1' goto wimage
+if '%postchoice%'=='2' goto nimage
+ECHO "%postchoice%" is not valid, try again
+goto start1
+
+
+:nimage
+@echo ^<article class^="bl-b mb-4"^> >> %articleIndex%
+echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
+echo 		^<div class^="position-relative"^> >> %articleIndex%
+echo				^<div class^="article-title"^> >> %articleIndex%
+echo						^<div class^="post-bg"^>^<div class^="article-descriptor-n-img"^>%postdescriptor%^</div^> >> %articleIndex%
+echo					^<div^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
+echo						^<p^>%description%^</p^> >> %articleIndex% 
+echo					^</div^> >> %articleIndex%
+echo 					^<div class^="article-author-time"^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<aside class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^>^<time^> %Hour%:%Min% %ap%^</time^>^</aside^> >> %articleIndex% 					
+echo					^</div^> >> %articleIndex%						
+echo				^</div^> >> %articleIndex%
+echo			^</div^> >> %articleIndex%
+echo 	^</a^> >> %articleIndex%
+echo ^</article^> >> %articleIndex%
+
+
+
+goto end1
+:wimage
+@echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
+echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
+echo 		^<div class^="row position-relative"^> >> %articleIndex%
+echo			^<img class^="col-3 col-4-medium o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
+echo			^<div class^="article-descriptor"^>%postdescriptor% >> %articleIndex%
+echo				^<div class^="article-title col-9 col-8-medium"^> >> %articleIndex%
+echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
+echo						^<p^>%description%^</p^> >> %articleIndex% 
+echo					^</div^> >> %articleIndex%
+echo 					^<div class^="article-author-time"^> >> %articleIndex% 
+echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<aside class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^>^<time^> %Hour%:%Min% %ap%^</time^>^</aside^>^</div^> >> %articleIndex% 
+echo				^</div^> >> %articleIndex%
+echo			^</div^> >> %articleIndex%
+echo 	^</a^> >> %articleIndex%
+echo ^</article^> >> %articleIndex%
+
+
+
+goto end1
+:end1
+
 
 set filename=articles
 set ext=.html
 set inputfile=%filename%%ext%
 break > %filename%1%ext%
 Powershell.exe -executionpolicy remotesigned -File fileInsert.ps1
-echo deleting articles.html
 del "%inputfile%"
-echo renaming articles1.html to articles.html
 ren %filename%1%ext% %inputfile%
-echo COMPLETED MAKING ARTICLE FOR ARTICLES.HTML...
+timeout /t 2
+break > %filename%1%ext%
+Powershell.exe -executionpolicy remotesigned -File utf8.ps1
+del "%inputfile%"
+ren %filename%1%ext% %inputfile%
+echo COMPLETED...
 pause

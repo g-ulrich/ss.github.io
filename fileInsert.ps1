@@ -4,8 +4,8 @@ $inputFile1 = "articles.html"
 $inputFile2 = "TEMP\articlesIndex.html" 
 # Output file 
 $outputFile = "articles1.html" 
-# Find where the last <inputArticle></inputArticle> tag is 
-if ((Select-String -Pattern "<inputArticle></inputArticle>" -Path $inputFile1 | 
+# Find where the last <!-- insert post --> tag is 
+if ((Select-String -Pattern "<!-- insert post -->" -Path $inputFile1 | 
     select -last 1) -match ":(\d+):") 
 { 
     $insertPoint = $Matches[1] 

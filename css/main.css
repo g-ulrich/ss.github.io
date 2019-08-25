@@ -2081,7 +2081,8 @@ input, select, textarea {
 		padding:3px !important;
 	  }
 	  .post-bg{
-		background-image: url('../images/ssmallstripes.gif');
+		/* background-image: url('../images/sunrise.jpg'); */
+		background-color:#fff;
 		padding:0 !important;
 		height:35px
 	  }
