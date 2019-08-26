@@ -275,11 +275,11 @@ goto end
 
 
 :start1
-echo CHOOSE YOUR POST DESCRIPTOR:
+echo CHOOSE YOUR POST STYLE:
 ECHO 1. With Image - Long
 ECHO 2. No Image - Long 
 set articlechoice=
-set /p postchoice=Choose which one you want (e.g. 1, 2, 3, 4, 5):
+set /p postchoice=Choose which one you want (e.g. 1, 2):
 if not '%postchoice%'=='' set postchoice=%postchoice:~0,1%
 if '%postchoice%'=='1' goto wimage
 if '%postchoice%'=='2' goto nimage
@@ -338,6 +338,11 @@ Powershell.exe -executionpolicy remotesigned -File fileInsert.ps1
 del "%inputfile%"
 ren %filename%1%ext% %inputfile%
 timeout /t 2
+
+
+break > %htmlfile%utf8.ps1
+
+
 break > %filename%1%ext%
 Powershell.exe -executionpolicy remotesigned -File utf8.ps1
 del "%inputfile%"
