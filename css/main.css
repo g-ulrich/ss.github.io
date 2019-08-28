@@ -2687,7 +2687,8 @@ width:40%
 					margin-left:6px
 				}
 				#header .nav-title{
-					margin-left:-8px
+					margin-left:-8px;
+					font-size: 1.59em;
 				  }
 
 				  #header > .hide736{

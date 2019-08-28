@@ -34,6 +34,12 @@
     padding: 14px 25px;
     text-decoration:none;
     margin-bottom:-3px
+  }
+
+.title{
+  display:inline;
+  color:#fff;
+  font-weight:700;
 }
 
 #header h1{
@@ -47,6 +53,7 @@
     margin-bottom:-7px;
     margin-left:8px
   }
+
 
   /*dropdown*/
   .dropdown-content {
@@ -84,8 +91,6 @@
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
- 
-  /* .dropdown:hover .dropdown-content {display: block;} */
   
 
   /*menu*/

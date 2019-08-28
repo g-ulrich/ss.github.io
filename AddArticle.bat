@@ -159,7 +159,7 @@ echo 							^</article^> >> %htmlfilename%
 echo 						^</div^> >> %htmlfilename%
 echo 						^<^!-- Sidebar --^> >> %htmlfilename%
 echo 						^<div class^="col-4 col-12-medium"^> >> %htmlfilename%
-echo 							^<section class^="boxSide o-h" itemscope^> >> %htmlfilename%
+echo 							^<section class^="boxSide o-h mb-4" itemscope^> >> %htmlfilename%
 echo 								^<header style^="padding:20px"^> >> %htmlfilename%
 echo 									^<h4^>Search Articles:^</h4^> >> %htmlfilename%
 echo 										^<input style^="width:100%%" id^="articleSearch" type^="text" placeholder^="Auto Search..."^> >> %htmlfilename%
@@ -173,10 +173,9 @@ echo								^<header style^="padding:20px"^> >> %htmlfilename%
 echo									^<h4^>Resources:^</h4^> >> %htmlfilename%
 echo								^</header^> >> %htmlfilename%
 echo							^<aside^> >> %htmlfilename%
-echo								^<ul style^="margin:20px"^> >> %htmlfilename%
+echo								^<ul style^="padding:20px"^> >> %htmlfilename%
 echo									^<div id^="web-resources"^>^</div^> >> %htmlfilename%
 echo								^</ul^> >> %htmlfilename%
-echo								^<button style^="left:38%%;position:relative" class^="mb-3"^>See More^</button^> >> %htmlfilename%
 echo							^</aside^> >> %htmlfilename%
 echo							^</section^> >> %htmlfilename% 
 echo 						^</div^> >> %htmlfilename%
@@ -228,7 +227,55 @@ goto LOOP
 endlocal
 :YES
 @echo ^<li^>^<a class^="search-a" href^="%htmlfileext%" title^="%articletitle%" itemprop^="Article"^>%articletitle%^</a^>^</li^> >> %filepath%search.html
+set articlesHomeSearch=articlesHomeSearch
+set ext=.html
+set tempHomeSearch=TEMP/articlesHomeSearch%ext%
+set homeSearchTrash=articles1%ext%
 
+
+:start3
+echo CHOOSE WHICH COLUMN IN ARTICLES HOME SEARCH:
+ECHO 1
+ECHO 2
+ECHO 3
+set articlechoice=
+set /p articlechoice=Choose which one you want (e.g. 1, 2, 3):
+if not '%articlechoice%'=='' set articlechoice=%articlechoice:~0,1%
+if '%articlechoice%'=='1' goto i
+if '%articlechoice%'=='2' goto ii
+if '%articlechoice%'=='3' goto iii
+ECHO "%articlechoice%" is not valid, try again
+goto start3
+
+
+:i
+break > %tempHomeSearch%
+break > %homeSearchTrash%
+@echo ^<li^>^<a class^="search-a" href^="%htmlfileext%" title^="%articletitle%" itemprop^="Article"^>%articletitle%^</a^>^</li^> >> %tempHomeSearch%
+Powershell.exe -executionpolicy remotesigned -File col1.ps1
+del articles.html
+ren articles1%ext% articles.html
+
+goto endSearch
+:ii
+break > %tempHomeSearch%
+break > %homeSearchTrash%
+@echo ^<li^>^<a class^="search-a" href^="%htmlfileext%" title^="%articletitle%" itemprop^="Article"^>%articletitle%^</a^>^</li^> >> %tempHomeSearch%
+Powershell.exe -executionpolicy remotesigned -File col2.ps1
+del articles.html
+ren articles1%ext% articles.html
+
+goto endSearch
+:iii
+break > %tempHomeSearch%
+break > %homeSearchTrash%
+@echo ^<li^>^<a class^="search-a" href^="%htmlfileext%" title^="%articletitle%" itemprop^="Article"^>%articletitle%^</a^>^</li^> >> %tempHomeSearch%
+Powershell.exe -executionpolicy remotesigned -File col3.ps1
+del articles.html
+ren articles1%ext% articles.html
+
+goto endSearch
+:endSearch
 set image=images/small-images/%Name%
 :: clear articlesIndex.html
 break > %articleindex%
@@ -338,10 +385,6 @@ Powershell.exe -executionpolicy remotesigned -File fileInsert.ps1
 del "%inputfile%"
 ren %filename%1%ext% %inputfile%
 timeout /t 2
-
-
-break > %htmlfile%utf8.ps1
-
 
 break > %filename%1%ext%
 Powershell.exe -executionpolicy remotesigned -File utf8.ps1
