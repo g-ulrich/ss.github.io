@@ -1986,8 +1986,16 @@ input, select, textarea {
 		object-fit: cover
 	}
 
+	.bg-c{
+		background-size:cover;
+	}
+
 	#main article {
 		margin:5px
+	}
+
+	.special-circle{
+		border-radius:100px;height:30px;width:30px;background-color:#26619c;margin:10px 0px 0px -6px;position:absolute;left:50%
 	}
 
 	 .lightBorder{

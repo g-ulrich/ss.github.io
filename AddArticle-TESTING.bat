@@ -360,7 +360,7 @@ goto end1
 @echo ^<article class^="mb-4 lightBorder"^> >> %articleIndex%
 echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
 echo 		^<div class^="row position-relative"^> >> %articleIndex%
-echo			^<div class^="col-3 col-4-medium bg-c" style^="background-image: url('%image%')"alt="%altimg%"/^>^</dive^> >> %articleIndex%
+echo			^<div class^="col-3 col-4-medium bg-c" style^="background-image: url('%image%')"alt="%altimg%"^>^</div^> >> %articleIndex%
 echo			^<div class^="article-descriptor"^>%postdescriptor% >> %articleIndex%
 echo				^<div class^="post-title col-9 col-8-medium"^> >> %articleIndex%
 echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
@@ -393,4 +393,5 @@ Powershell.exe -executionpolicy remotesigned -File utf8.ps1
 del "%inputfile%"
 ren %filename%1%ext% %inputfile%
 echo COMPLETED...
+goto LOOP
 pause
