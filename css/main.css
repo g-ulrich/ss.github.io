@@ -2569,9 +2569,6 @@ width:40%
 /* Small */
 
 	@media screen and (max-width: 736px) {
-		.hide500{
-			display:none
-		}
 		/* Actions */
 			ul.actions li {
 				margin: 1em 0 0 0;
@@ -2769,6 +2766,13 @@ width:40%
 				display:block
 				}
 				
+	}
+
+
+	@media screen and (max-width:500px){
+		.hide500{
+			display:none !important;
+		}
 	}
 
 
