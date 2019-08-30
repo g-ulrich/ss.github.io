@@ -2027,6 +2027,11 @@ input, select, textarea {
 		margin:0px 0px -3px 0px
 	}
 
+	.post-title div {
+		overflow: hidden;
+		position: relative;
+		padding:0px 10px;
+	  }
 	.article-title div {
 		overflow: hidden;
 		position: relative;
@@ -2142,6 +2147,11 @@ width:40%
 	transform: scale(1.05,1.05);
   }
   .article-title {
+    position: relative;
+	background-color:#fff
+  }
+
+  .post-title {
     position: relative;
 	background-color:#fff
   }
