@@ -2781,6 +2781,10 @@ width:40%
 		.hide500{
 			display:none !important;
 		}
+
+		.post-title > div > h3{
+			font-size: 1.1em;
+		}
 	}
 
 
