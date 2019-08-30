@@ -137,7 +137,7 @@ echo 							^<^!-- Content --^> >> %htmlfilename%
 echo 							^<article class^="boxArticle post shadow-sm"^> >> %htmlfilename%
 echo 							^<a href^="%imghref%" class^="image featured"^>^<img src^="%image%" alt^="%altimg%" /^>^</a^> >> %htmlfilename%
 echo								^<div class^="post-author-time"^> >> %htmlfilename%
-echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<time class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^> %Hour%:%Min% %ap%^</time^>^</div^> >> %htmlfilename%
+echo								^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<aside class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^>^<time^> %Hour%:%Min% %ap%^</time^>^</aside^>^</div^> >> %htmlfilename%
 echo								^<section class^="info"^> >> %htmlfilename%
 echo								^<header^> >> %htmlfilename%
 echo                                    ^<h1^>%articletitle%^</h1^> >> %htmlfilename%
@@ -338,7 +338,7 @@ goto start1
 @echo ^<article class^="bl-b mb-4"^> >> %articleIndex%
 echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
 echo 		^<div class^="position-relative"^> >> %articleIndex%
-echo				^<div class^="article-title"^> >> %articleIndex%
+echo				^<div class^="post-title"^> >> %articleIndex%
 echo						^<div class^="post-bg"^>^<div class^="article-descriptor-n-img"^>%postdescriptor%^</div^> >> %articleIndex%
 echo					^<div^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
 echo						^<p^>%description%^</p^> >> %articleIndex% 
@@ -360,7 +360,7 @@ echo    ^<a href^="%htmlfileext%"^> >> %articleIndex%
 echo 		^<div class^="row position-relative"^> >> %articleIndex%
 echo			^<img class^="col-3 col-4-medium o-cover" src^="%image%"alt="%altimg%"/^> >> %articleIndex%
 echo			^<div class^="article-descriptor"^>%postdescriptor% >> %articleIndex%
-echo				^<div class^="article-title col-9 col-8-medium"^> >> %articleIndex%
+echo				^<div class^="post-title col-9 col-8-medium"^> >> %articleIndex%
 echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
 echo						^<p^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
