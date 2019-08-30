@@ -2599,9 +2599,7 @@ width:40%
 				margin-bottom: 20px;
 			}
 
-			time{
-				display:none
-			}
+		
 
 			footer {
 				margin: 2em 0 0 0;
@@ -2779,7 +2777,7 @@ width:40%
 	}
 
 
-	@media screen and (max-width:500px){
+	@media screen and (max-width:540px){
 		.hide500{
 			display:none !important;
 		}

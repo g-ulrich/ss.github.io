@@ -341,7 +341,7 @@ echo 		^<div class^="position-relative"^> >> %articleIndex%
 echo				^<div class^="post-title"^> >> %articleIndex%
 echo						^<div class^="post-bg"^>^<div class^="article-descriptor-n-img"^>%postdescriptor%^</div^> >> %articleIndex%
 echo					^<div^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
+echo						^<p class^="hide500"^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
 echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<aside class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^>^<time^> %Hour%:%Min% %ap%^</time^>^</aside^> >> %articleIndex% 					
@@ -362,7 +362,7 @@ echo			^<img class^="col-3 col-4-medium o-cover" src^="%image%"alt="%altimg%"/^>
 echo			^<div class^="article-descriptor"^>%postdescriptor% >> %articleIndex%
 echo				^<div class^="post-title col-9 col-8-medium"^> >> %articleIndex%
 echo					^<div class^="article-d-none"^> ^<h3^>%articletitle%^</h3^> >> %articleIndex%
-echo						^<p^>%description%^</p^> >> %articleIndex% 
+echo						^<p class^="hide500"^>%description%^</p^> >> %articleIndex% 
 echo					^</div^> >> %articleIndex%
 echo 					^<div class^="article-author-time"^> >> %articleIndex% 
 echo						^<img class^="author-icon" src^="%authorImage%"alt^="%altimg2%"/^> %authorname% ^<aside class^="float-right"^>%monthname% %MaS%^<sup^>%ending%^</sup^>^<time^> %Hour%:%Min% %ap%^</time^>^</aside^>^</div^> >> %articleIndex% 
