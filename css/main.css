@@ -2853,7 +2853,8 @@ width:40%
 		color:#fff;
 		text-align:center;
 		background-color: #26619c;
-		padding:20px
+		padding:20px;
+		z-index:999;
 	}
 .float-right{
 	float:right
