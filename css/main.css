@@ -2854,7 +2854,7 @@ width:40%
 		text-align:center;
 		background-color: #26619c;
 		padding:20px;
-		z-index:999;
+		display:none;
 	}
 .float-right{
 	float:right
