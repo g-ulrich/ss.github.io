@@ -1,1 +1,0 @@
-Get-Content ./articles.html | out-file -encoding utf8 articles1.html

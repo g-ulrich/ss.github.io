@@ -1354,6 +1354,31 @@ input, select, textarea {
 	overflow:hidden
 }
 
+ul.breadcrumb {
+	padding: 0px 16px;
+	list-style: none;
+	background-color: #eee;
+	margin-right:5px;
+	margin-left:5px
+  }
+  ul.breadcrumb a {
+	display: inline;
+	font-size: 15px;
+  }
+  ul.breadcrumb a+a:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+  }
+  ul.breadcrumb a {
+	color: #747474;
+	text-decoration: none;
+  }
+  ul.breadcrumb a:hover {
+	  color:#000;
+	text-decoration: underline;
+  }
+
 	.boxArticle {
 		background-color: #ffffff;
 		padding: 2.75em 0em 0em 0em;
@@ -1376,7 +1401,8 @@ input, select, textarea {
 		.boxArticle.post h1 {
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
-			line-height: .9em
+			line-height: .9em;
+			color:#000
 		}
 
 		.boxArticle.post header > p {
@@ -1864,6 +1890,7 @@ input, select, textarea {
 	#page-wrapper .article-search{
 		background-color:rgba(238, 238, 238, 0.426);
 		box-shadow: 0px 0px 25px lightgray inset;
+		padding:10px
 	}
 
 	.article-search input{
@@ -1871,6 +1898,7 @@ input, select, textarea {
 		border-radius:50px;
 		border:none;
 		padding:0px 20px;
+		line-height:1.75em;
 		box-shadow:1px 1px 4px gray inset
 	}
 	
@@ -1995,7 +2023,13 @@ input, select, textarea {
 	}
 
 	.special-circle{
-		border-radius:100px;height:30px;width:30px;background-color:#26619c;margin:10px 0px 0px -6px;position:absolute;left:50%
+		border-radius:100px;
+		height:40px;
+		width:40px;
+		background-color:#26619c;
+		margin:5px 0px 0px -11px; /*top, right, bottom, left*/
+		position:absolute;
+		left:50%
 	}
 
 	 .lightBorder{
@@ -2607,7 +2641,14 @@ width:40%
 				margin-bottom: 20px;
 			}
 
+			.boxArticle.post h1 {
+				font-size: 1.7em;
+			}
 		
+			h2 {
+				font-size: 1.3em;
+				line-height:1.0em;
+			}
 
 			footer {
 				margin: 2em 0 0 0;
@@ -2807,6 +2848,7 @@ width:40%
 
 
 	/* extra */
+
 	#msgDiv{
 		color:#fff;
 		text-align:center;
