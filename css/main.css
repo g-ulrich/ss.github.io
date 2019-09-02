@@ -2848,13 +2848,11 @@ width:40%
 
 
 	/* extra */
-
 	#msgDiv{
 		color:#fff;
 		text-align:center;
 		background-color: #26619c;
 		padding:20px;
-		display:none;
 	}
 .float-right{
 	float:right
