@@ -11,7 +11,7 @@ if (version === false) {
   document.getElementById('result').innerHTML = '';
   document.getElementById('msgDiv').style.display = 'none';
 } else {
-  document.getElementById('result').innerHTML = 'Internet Explorer v.' + version + ' is not supported. Please choose a different browser. <br/> &#9785;';
+  document.getElementById('result').innerHTML = 'Internet Explorer v.' + version + ' is not fully supported. Please choose a different browser. <br/> &#9785;';
   document.getElementById('msgDiv').style.display = 'block';
 }
 function detectIE() {
