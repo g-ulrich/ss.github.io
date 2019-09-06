@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $("#web-header").load("common/header.html");
   $("#web-footer").load("common/footer.html");
-  // autoType(".type-js",200);
 });
 var version = detectIE();
 if (version === false) {
