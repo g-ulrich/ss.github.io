@@ -412,10 +412,6 @@ width:40%
 
 
 	@media screen and (max-width:540px){
-		.hide500{
-			display:none !important;
-		}
-
 		.post-title > div > h3{
 			font-size: 1.1em;
 		}
