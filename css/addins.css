@@ -240,17 +240,7 @@ ul li {
 		-webkit-line-clamp: 2;
 	  }
 
-	  .article-descriptor{
-		position: absolute;
-		top: 0;
-		left: 0;
-		margin:5px;
-		background-color:rgba(0, 0, 0, 0.282);
-		color:rgba(255, 255, 255, 0.912);
-		font-size:15px;
-		line-height:1.2;
-		padding:3px !important
-	  }
+	  
 
 	  .article-descriptor-n-img{
 		display:inline-block;
@@ -264,12 +254,7 @@ ul li {
 		line-height:1.2;
 		padding:3px !important;
 	  }
-	  .post-bg{
-		/* background-image: url('../images/sunrise.jpg'); */
-		background-color:#fff;
-		padding:0 !important;
-		height:35px
-	  }
+
 
 	  .bl-b{
 		  border-left:solid 5px #26619c;
@@ -302,6 +287,7 @@ ul li {
 		height:30px;
 		width:30px;
 		margin-bottom: 3px;
+		
 	  }
 
 	  
@@ -349,14 +335,7 @@ width:40%
 		color: #858484;
 		background-color:#fff;
 	}
-	#footer .social-icons{
-		display:block;
-		font-size:50px;
-		padding:10px
-			}
-			#footer .social-icons:hover{
-			color:#26619c
-					}
+
 .gotop{
 	float:right; margin:20px;font-size:40px;color:#26619c
 }
@@ -364,23 +343,6 @@ width:40%
 	color:#26619cbb
 }
 
-#footer .content{
-	padding:20px;
-	margin: 0 auto
-}
-
-		#footer a {
-			color: #858484;
-			text-decoration:none
-		}
-		
-		#footer .social-icons{
-			display:inline
-				}
-				
-				.boxSide {
-			max-width:100%
-		}
 		
 		
 		#main article{
@@ -468,10 +430,6 @@ width:40%
 		.hide500{
 			display:none !important;
 		}
-		/* .post-title p{
-			white-space: nowrap;
-			text-overflow: ellipsis !important;
-		} */
 	}
 
 
