@@ -63,7 +63,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  /* background-image: url('../images/smallstripes.gif'); */
+  background-image: url('../images/smallstripes.gif');
 }
 
 [tabindex="-1"]:focus {
@@ -1844,11 +1844,11 @@ pre code {
   }
 
   .search-icon {
-    width:35px;
+    width:30px;
     padding-left:.25rem;
     padding-right:.25rem;
-    padding-bottom:.22rem;
-    padding-top:.22rem;
+    padding-bottom:.5rem;
+    padding-top:.45rem;
   }
   .d-c {
     width:100%;
@@ -5120,16 +5120,33 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
+  top:30%;
+  left:50%;
+  margin-left:-370px;
+  z-index:99;
+  background-color: rgba(0, 0, 0, 0.35);
+  border:solid rgba(255, 255, 255, 0.179) 2px;
   border-radius: 0.3rem;
+  color:#fff;
+  padding:20px
 }
 
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem;
-  }
+.jumbo-brand-silent {
+  color:rgba(255, 255, 255, 0.2);
+}
+
+.jumbotron-header > h1 {
+  font-size:70px !important;
+  margin-top:0 !important;
+}
+
+.jumbotron-header > h1 > img {
+  height:80px !important;
+  width:auto;
+}
+
+.jumbotron-header > h2 {
+  font-size:35px !important;
 }
 
 .jumbotron-fluid {
@@ -6278,6 +6295,7 @@ a.close.disabled {
   display: none;
   float: left;
   width: 100%;
+  height:500px;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -10103,6 +10121,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header-footer-shadow {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  z-index:999;
 }
 
 .footer-copyright {
@@ -10125,6 +10144,25 @@ a.text-dark:hover, a.text-dark:focus {
   .footer-links li a{
     font-size: 1.4rem !important;
     font-weight:400;
+  }
+  .jumbotron {
+    left:0;
+    margin-left:0;
+    z-index:99;
+    width:100%;
+  }
+
+  .jumbotron-header > h1 {
+    font-size:50px !important;
+  }
+
+  .jumbotron-header > h1 > img {
+    height:50px !important;
+    width:auto;
+  }
+
+  .jumbotron-header > h2 {
+    font-size:22px !important;
   }
 }
 
@@ -10206,3 +10244,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-bottom:solid 4px #3b5998;
   }
 
+  .page-footer {
+  background-color:#fff;
+  }
