@@ -40,8 +40,6 @@ background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-filter: blur(5px);
--webkit-filter: blur(3px);
 }
 
 #tips {
