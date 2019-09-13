@@ -1,3 +1,10 @@
+.lightbg {
+	background-color:#f7f7f7;
+}
+
+.form {
+	margin-top:20px;
+}
 
  #slider {
 	position: relative;
@@ -28,7 +35,7 @@
   }
 
 .parallax-home {
-min-height: 500px; 
+min-height: 400px; 
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;

@@ -297,6 +297,7 @@ input[type="month"] {
 textarea {
   overflow: auto;
   resize: vertical;
+  height:200px;
 }
 
 fieldset {
@@ -5132,7 +5133,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbo-brand-silent {
-  color:rgba(255, 255, 255, 0.2);
+  color:rgba(255, 255, 255, 0.5);
 }
 
 .jumbotron-header > h1 {
@@ -5147,6 +5148,28 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .jumbotron-header > h2 {
   font-size:35px !important;
+}
+
+.jumbotron-contact {
+  margin-top:30px;
+  left:50%;
+  margin-left:-190px;
+  z-index:99;
+  background-color: rgba(0, 0, 0, 0.35);
+  border:solid rgba(255, 255, 255, 0.5) 2px;
+  border-radius: 0.3rem;
+  color:#fff;
+  padding:20px
+}
+
+.jumbotron-contact > h1 {
+  font-size:70px !important;
+  margin-top:0 !important;
+}
+
+.jumbotron-contact> h1 > img {
+  height:60px !important;
+  width:auto;
 }
 
 .jumbotron-fluid {
@@ -10163,6 +10186,22 @@ a.text-dark:hover, a.text-dark:focus {
 
   .jumbotron-header > h2 {
     font-size:22px !important;
+  }
+
+  .jumbotron-contact {
+    left:0;
+    margin-left:0;
+    z-index:99;
+    width:100%;
+  }
+  
+  .jumbotron-contact > h1 {
+    font-size:50px !important;
+  }
+  
+  .jumbotron-contact> h1 > img {
+    height:40px !important;
+    width:auto;
   }
 }
 
