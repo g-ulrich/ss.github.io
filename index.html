@@ -39,11 +39,9 @@
             <h2>In An Age of Information Without Application</h2>
         </div>    
 
-        <ul id="tips">
-            <li><div class="parallax-home" style="background-image: url('images/clouds.png');"></div></li>
-            <li><div class="parallax-home" style="background-image: url('images/skyclouds.jpg');"></div></li>
-            <li><div class="parallax-home" style="background-image: url('images/sky.jpg');"></div></li>
-        </ul>
+       
+        <div class="parallax-home" style="background-image: url('images/sky.jpg');"></div>
+        
 
           <!-- Page Content -->
   <div class="container">
@@ -125,37 +123,6 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-
-        this.randomtip = function(){
-        
-            var pause = 10000; // define the pause for each tip (in milliseconds) Feel free to make the pause longer so users can have time to read the tips :)
-            var length = $("#tips li").length; 
-            var temp = -1;		
-        
-            this.getRan = function(){
-                // get the random number
-                var ran = Math.floor(Math.random()*length) + 1;
-                return ran;
-            };
-            this.show = function(){
-                var ran = getRan();
-                // to avoid repeating tips we need to check 
-                while (ran == temp){
-                    ran = getRan();
-                }; 
-                temp = ran;
-                $("#tips li").hide();	
-                $("#tips li:nth-child(" + ran + ")").fadeIn("fast");		
-            };
-            // initiate the script and also set an interval
-            show(); setInterval(show,pause);
-            
-        };
-        
-        $(document).ready(function(){	
-            randomtip();
-        });
-        </script>
+    
 </body>
 </html>
