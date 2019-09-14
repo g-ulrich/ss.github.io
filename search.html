@@ -30,14 +30,55 @@
    
         <!-- Header -->
         <div id="web-header"></div>
-      
+        <div class="article-search pb-4">
+            <section class="container">
+                <header>    
+                    <div class="row">
+                        <div class="col-12 mt-3 mb-3">
+                            <h3 class="text-center">Search For Anything On This Website:</h3>
+                        </div>
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6 mb-4" style="border-radius:50px">
+                                <input id="articleSearchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><img class="input-search-icon" src="images/icon/search.png"/>     
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                </header>
+            </section>
+         </div>
+
         <!-- Main -->
-            
+        <div class="container">
+            <ul id="articleList">
+                <div class="row">
+                    <div class="col-sm"><!--col1-->
+                        <li>ccc</li>
+                    </div>
+                    <div class="col-sm"><!--col2-->
+                        <li>bbb</li>
+                    </div>
+                    <div class="col-sm"><!--col3-->
+                        <li>aaa</li>
+                    </div>
+                </div>
+            </ul>
+        </div>
 
         <!-- footer -->
        <div id="web-footer"></div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#articleSearchInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#articleList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+        });
+    });
+
+    </script>
 </body>
 </html>
