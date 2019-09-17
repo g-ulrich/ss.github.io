@@ -1,3 +1,9 @@
+
+.main-article {
+	right:0; top:0;
+	height:100%;
+  }
+
 .tiny-article {
 	margin:5px;
 	border: black 1px solid;

@@ -1808,6 +1808,11 @@ pre code {
   .hide575 {
     display:none;
   }
+  .main-article {
+    height:35px;
+    width:50px;
+    right:35px
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1819,6 +1824,9 @@ pre code {
   }
   .table-responsive-md > .table-bordered {
     border: 0;
+  }
+  .hide767 {
+    display:none;
   }
 }
 
