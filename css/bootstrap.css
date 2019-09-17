@@ -1795,6 +1795,12 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+@media (max-width: 500px) {
+  .hide500 {
+    display:none;
+  }
+}
+
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -1809,9 +1815,14 @@ pre code {
     display:none;
   }
   .main-article {
-    height:35px;
-    width:50px;
-    right:35px
+    top:auto;
+    height:40px;
+   width:50px;
+    right:35px;
+    bottom:7px !important;
+  }
+  .home-title {
+    font-size:35px;
   }
 }
 
@@ -1879,6 +1890,9 @@ pre code {
   }
   .table-responsive-xl > .table-bordered {
     border: 0;
+  }
+  .hide1200 {
+    display:none;
   }
 }
 
@@ -10150,6 +10164,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bg-c{
   background-size:cover;
+}
+
+.bg-b {
+background-color:#26619c;
 }
 
 .lightBorder{
