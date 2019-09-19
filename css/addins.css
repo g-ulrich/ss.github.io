@@ -1,4 +1,11 @@
 
+.large-btn {
+	padding: 0.5rem 1rem;
+  font-size: 1.5rem !important;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+} 
+
 .white-bottom-blur {
 	height:45px;
 	background: -webkit-linear-gradient(-90deg,rgba(255, 255, 255, 0.4) 25%,rgba(255, 255, 255, 0.8) 25%, #fff 50%);
@@ -71,7 +78,8 @@
 	position:absolute;
 	right:20px;
 	bottom:10px;
-	color:#000;
+	color:#c1a94d;;
+	font-weight:700;
 	border-radius:5px;
 	padding:3px;
 	font-size:15px;
@@ -155,7 +163,7 @@ background-size: cover;
 }
 
 .navbar-brand-silent {
-	color:#26619c;
+	color:#102846;
 	text-shadow:0px 0px 8px #fff;
 }
 

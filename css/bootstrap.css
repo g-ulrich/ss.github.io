@@ -2525,36 +2525,36 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #26619c;
-  border-color: #26619c;
+  background-color: #c1a94d;
+  border-color: #c1a94d;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: rgb(209, 184, 84);
+  border-color: rgb(209, 184, 84);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(209, 184, 84, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #26619c;
-  border-color: #26619c;
+  background-color: #c1a94d;
+  border-color: #c1a94d;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: rgb(209, 184, 84);
+  border-color: rgb(209, 184, 84);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(250, 223, 116, 0.5);
 }
 
 .btn-secondary {
@@ -4284,13 +4284,13 @@ input[type="button"].btn-block {
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 0.3525rem;
   padding-left:1rem;
   padding-right:1rem;
   font-size: 1.5rem;
   line-height: inherit;
   white-space: nowrap;
-  background-color:#26619c;
+  background-color:#102846;
   font-weight:700;
  
 }
@@ -5211,7 +5211,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  margin-top:70px;
+  margin-top:50px;
   left:50%;
   margin-left:-370px;
   z-index:99;
@@ -10347,11 +10347,12 @@ background-color:#26619c;
       display:inline-block;
       left:20px;
       margin:5px;
-      background-color:rgba(0, 0, 0, 0.282);
+      background-color:#c1a94d;
       color:rgba(255, 255, 255, 0.912);
+      border-radius:2px;
       font-size:15px;
       line-height:1.2;
-      padding:3px !important;
+      padding:3px 5px!important;
     }
 
   .footer-article {
