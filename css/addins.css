@@ -1,3 +1,21 @@
+
+.white-bottom-blur {
+	height:45px;
+	background: -webkit-linear-gradient(-90deg,rgba(255, 255, 255, 0.4) 25%,rgba(255, 255, 255, 0.8) 25%, #fff 50%);
+	background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.4) 25%,rgba(255, 255, 255, 0.8) 25%, #fff 50%);
+	background: linear-gradient(180deg,rgba(255, 255, 255, 0.4) 25%,rgba(255, 255, 255, 0.8) 25%,  #fff 50%);
+	margin-left:16px;
+	bottom:5px;
+	width: calc(100% - 32px);
+	left:0;
+	border-radius:0px 0px 3px 3px;
+	z-index:99;
+}
+
+.bottom {
+	bottom:0;
+}
+
 .black-a > a{
 	color:#000 !important;
 }
@@ -9,21 +27,61 @@
   }
 
 .tiny-article {
-	border: solid 1px #f7f7f7;
+	border: solid 1px #fff;
 	background-color:#fff;
 	padding:5px;
-	box-shadow:0px 0px 10px rgba(0,0,0,0.3);
 	border-radius:3px;
+	margin-top:5px;
+	margin-bottom:5px;
+	height:300px;
+	overflow-y:hidden;
 }
 
-.tiny-article:hover {
-	border: solid 1px #b1b1b1
+.shadow-hover {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-hover:hover {
+	box-shadow: 0 0rem 0rem rgba(0, 0, 0, 0.0) !important;
 }
 
 .tiny-article > a > h3 {
 	margin-top:0;
 	padding-top:5px;
+	color:#000 !important;
+	font-weight:600;
+}
+
+.tiny-article > a > p {
+	color: rgb(58, 58, 58) !important;
+	font-size:1.2rem;
+}
+
+.tiny-article > a > img{
+	height: 35px;
+	width:auto;
+	z-index:999;
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+
+.more {
+	z-index:999;
+	position:absolute;
+	right:20px;
+	bottom:10px;
 	color:#000;
+	border-radius:5px;
+	padding:3px;
+	font-size:15px;
+	background-color:#fff;
+}
+
+.more:hover {
+	border: solid #fff 1px;
+	color:#fff;
+	background-color:#26619c;
 }
 
 .lightbg {
@@ -74,8 +132,6 @@ background-size: cover;
 	padding-left:0;
 	margin-left:0;
 }
-
-
 
 .parallax {
 	min-height: 200px; 
