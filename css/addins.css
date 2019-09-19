@@ -1,11 +1,4 @@
 
-.large-btn {
-	padding: 0.5rem 1rem;
-  font-size: 1.5rem !important;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-} 
-
 .white-bottom-blur {
 	height:45px;
 	background: -webkit-linear-gradient(-90deg,rgba(255, 255, 255, 0.4) 25%,rgba(255, 255, 255, 0.8) 25%, #fff 50%);

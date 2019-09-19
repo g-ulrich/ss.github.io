@@ -1841,6 +1841,9 @@ pre code {
   .home-title {
     font-size:35px;
   }
+  .large-btn {
+    font-size: .95rem !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4414,6 +4417,12 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 768px) {
+  .large-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem !important;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
   .navbar-expand-md {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
