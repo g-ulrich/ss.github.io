@@ -1924,8 +1924,6 @@ pre code {
     }
 }
 
-
-
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
@@ -1951,6 +1949,9 @@ pre code {
   .tiny-article > a > p {
     display:none;
   }
+  .parallax-home {
+    background-attachment: scroll !important;
+    }
 }
 
 .table-responsive {
