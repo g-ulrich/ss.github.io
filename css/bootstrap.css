@@ -4420,6 +4420,10 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 768px) {
+  .ml-2s {
+    margin-left: .5rem !important;
+  }
+
   .large-btn {
     padding: 0.5rem 1rem;
     font-size: 1.5rem !important;
