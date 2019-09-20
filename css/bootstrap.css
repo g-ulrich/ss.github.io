@@ -1872,6 +1872,13 @@ pre code {
   .pl-5s {
     padding-left: 1rem !important;
   }
+  .parallax-home {
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 }
 
 @media (max-width: 991.98px) and (min-width: 767.98px) {
