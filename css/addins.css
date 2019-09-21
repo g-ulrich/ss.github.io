@@ -1,3 +1,7 @@
+.bg-w {
+	background-color:#fff;
+}
+
 .color-gold {
 	color: rgb(209, 184, 84) !important;
 }
@@ -86,6 +90,7 @@
 
 .shadow-hover {
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	transition: 0.5s;
 }
 
 .shadow-hover:hover {
