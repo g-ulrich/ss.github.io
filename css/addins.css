@@ -41,7 +41,7 @@
 	width: calc(100% - 32px);
 	left:0;
 	border-radius:0px 0px 3px 3px;
-	z-index:99;
+	z-index:9;
 }
 
 .white-bottom-blur-footer {
@@ -54,7 +54,7 @@
 	width: calc(100% - 32px);
 	left:0;
 	border-radius:0px 0px 3px 3px;
-	z-index:99;
+	z-index:9;
 }
 
 
@@ -479,7 +479,6 @@ ul li {
 		height:30px;
 		width:30px;
 		margin-bottom: 3px;
-		
 	  }
 
 	  
