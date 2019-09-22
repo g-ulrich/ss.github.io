@@ -50,9 +50,9 @@
 
 .white-bottom-blur-footer {
 	height:90px;
-	background: -webkit-linear-gradient(-90deg,rgba(255, 255, 255, 0.4) 15%,rgba(253, 253, 253, 0.8) 35%, #fff 50%);
-	background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.4) 15%,rgba(253, 253, 253, 0.8) 35%, #fff 50%);
-	background: linear-gradient(180deg,rgba(255, 255, 255, 0.4) 15%,rgba(253, 253, 253, 0.8) 35%,  #fff 50%);
+	background: -webkit-linear-gradient(-90deg,rgba(17, 50, 89, 0.4) 15%,rgba(17, 50, 89, 0.8) 35%, rgb(17, 50, 89) 50%);
+	background: -moz-linear-gradient(180deg, rgba(17, 50, 89, 0.4) 15%,rgba(17, 50, 89, 0.8) 35%, rgb(17, 50, 89) 50%);
+	background: linear-gradient(180deg,rgba(17, 50, 89, 0.4) 15%,rgba(17, 50, 89, 0.8) 35%,  rgb(17, 50, 89) 50%);
 	margin-left:16px;
 	bottom:5px;
 	width: calc(100% - 32px);

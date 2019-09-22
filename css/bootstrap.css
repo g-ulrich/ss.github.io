@@ -10301,6 +10301,11 @@ background-color:#113259;
   padding-left:5px;
 }
 
+.bl-gold {
+  border-left:solid 3px rgb(209, 184, 84);
+  padding-left:5px;
+}
+
 .bl-w {
   border-left:solid 3px #fff;
   padding-left:5px;
