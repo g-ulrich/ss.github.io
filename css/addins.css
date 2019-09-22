@@ -297,7 +297,6 @@ background-size: cover;
 
 	.boxArticle {
 		background-color: #ffffff;
-		padding: 2.75em 0em 0em 0em;
 	}
 	.boxArticle .info{
 		padding: 2em 2em;
@@ -308,11 +307,7 @@ background-size: cover;
 			width: auto;
 			margin: -3em 0em 0em 0em;
 		}
-		
-		.boxArticle.post header {
-			padding-top: 1em;
-			margin: 0 0 2em 0;
-		}
+	
 
 		.boxArticle.post h1 {
 			font-size: 2.5em;
@@ -368,12 +363,10 @@ ul li {
 	}
 
 /* Header */
-	#main ul li a{
-		color: #26619c;
-	}
 
-	#main ul li{
+	.similar-resources{
 		border-bottom: solid rgb(225, 225, 225) 1px;
+		padding-bottom:5px;
 	}
 
 	.similar-resources{
@@ -383,11 +376,15 @@ ul li {
 		text-decoration:none !important;
 	}
 	
+	.similar-resources > a {
+		color:#113259 !important;
+	}
+
 	.similar-resources:hover {
 		text-decoration: none !important;
 	}
 
-	.similar-resources > li > a:after{
+	.similar-resources > a:after{
 		content:"»";
 		float:right;
 	}
@@ -396,14 +393,14 @@ ul li {
 		text-decoration: none !important;
 	}
 
-	#main ul li:hover{
+	.similar-resources:hover{
 		background-color:#f7f7f7;
 	}
 
-	#main ul li a img{
-		height:20px;
-		width:20px;
-		margin:0px 0px -3px 0px
+	.similar-resources > a > img{
+		height:25px;
+		width:25px;
+		border-radius:3px;
 	}
 
 	.post-title div {
@@ -538,90 +535,3 @@ width:40%
 .gotop:hover {
 	color:#26619cbb
 }
-
-		
-		
-		#main article{
-				margin:10px
-			}
-
-			#main ul li:after{
-				content:"";
-				float:right;
-			}
-			
-			/*small*/
-/*			.boxArticle.post h1 {
-				font-size: 1.7em;
-			}
-		
-			h2 {
-				font-size: 1.3em;
-				line-height:1.0em;
-			}
-			
-			  .hide736{
-					display:none
-				  }
-				  
-				  .boxArticle .info{
-					padding: 1em 1em;
-				}
-
-				
-					#header h1 {
-					letter-spacing: -0.04em;
-					font-size: .9em
-				}
-				
-				#header img{
-					height:30px;
-					margin-left:6px
-				}
-				#header .nav-title{
-					margin-left:-8px;
-					font-size: 1.59em;
-				  }
-
-				  #header > .hide736{
-					display:none
-				  }
-
-				  .article-search input{
-					margin:20px 0px 20px 0px
-				}
-
-				.search-icon{
-					margin:27px 0px 0px -30px
-				}
-			
-				.center-search{
-					margin:0 auto;
-					width:100%
-				}
-				
-				#main ul li:after{
-				content:" »";
-				float:right;
-			}
-			
-			 #footer .article-d-none{
-				display:block
-				}*/
-				
-	/*end of 736*/
-
-
-	@media screen and (max-width:540px){
-		.post-title > div > h3{
-			font-size: 1.1em;
-		}
-	}
-
-	/* extra */
-	#msgDiv{
-		color:#fff;
-		text-align:center;
-		background-color: #26619c;
-		padding:20px;
-	}
