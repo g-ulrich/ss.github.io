@@ -1844,6 +1844,9 @@ pre code {
   .large-btn {
     font-size: .95rem !important;
   }
+  .article-padding {
+    padding: 1.5rem !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -5235,7 +5238,17 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: rgba(0, 0, 0, 0.35);
   border:solid rgba(255, 255, 255, 0.179) 2px;
   border-radius: 0.3rem;
-  color:#fff;
+  padding:20px
+}
+
+.jumbotron-page {
+  margin-top:50px;
+  left:50%;
+  margin-left:-325px;
+  z-index:99;
+  background-color: rgba(0, 0, 0, 0.35);
+  border:solid rgba(255, 255, 255, 0.179) 2px;
+  border-radius: 0.3rem;
   padding:20px
 }
 
@@ -8373,6 +8386,10 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
+.article-padding {
+  padding: 3rem;
+}
+
 .pt-5,
 .py-5 {
   padding-top: 3rem !important;
@@ -10300,7 +10317,7 @@ background-color:#113259;
     font-size: 1.4rem !important;
     font-weight:400;
   }
-  .jumbotron {
+  .jumbotron, .jumbotron-page {
     left:0;
     margin-left:0;
     z-index:99;
