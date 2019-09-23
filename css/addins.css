@@ -298,9 +298,6 @@ background-size: cover;
 	.boxArticle {
 		background-color: #ffffff;
 	}
-	.boxArticle .info{
-		padding: 2em 2em;
-	}
 
 		.boxArticle .image.featured {
 			position: relative;

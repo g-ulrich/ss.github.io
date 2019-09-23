@@ -1845,7 +1845,13 @@ pre code {
     font-size: .95rem !important;
   }
   .article-padding {
-    padding: 1.5rem !important;
+    padding: 1rem !important;
+  }
+  .boxArticle.post h1 {
+    font-size: 2em;
+    letter-spacing: -0.015em;
+    line-height: .9em;
+    color:#102846;
   }
 }
 
