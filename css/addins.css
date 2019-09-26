@@ -1,3 +1,4 @@
+
 .bg-w {
 	background-color:#fff;
 }
@@ -202,11 +203,13 @@ background-size: cover;
 	}
 
 .search-icon {
-	width:55px;
+  width:55px;
   padding-left:1rem;
   padding-right:1rem;
   margin-top:-3px;
 }
+
+
 
 .input-search-icon {
 	height:25px;
