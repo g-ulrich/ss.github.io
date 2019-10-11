@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Simple Map</title>
+<title>Serving Silent | Churches</title>
 <link rel="stylesheet" href="css/addins.css"/>
 <link rel="stylesheet" href="css/bootstrap.css"/>
 <link rel="stylesheet" href="css/header.css"/>
@@ -21,9 +21,9 @@
     padding: 0;
   }
   .controls {
-  margin-top: 10px;
+  margin-top: 1px;
   border: 1px solid transparent;
-  border-radius: 2px 0 0 2px;
+  border-radius: 2px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 32px;
@@ -34,7 +34,6 @@
 #origin-input,
 #destination-input {
   background-color: #fff;
-  font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
   margin-left: 12px;
@@ -43,16 +42,10 @@
   width: 200px;
 }
 
+
 #origin-input:focus,
 #destination-input:focus {
   border-color: #4d90fe;
-}
-
-#mode-selector {
-  color: #fff;
-  background-color: #4d90fe;
-  margin-left: 12px;
-  padding: 5px 11px 0px 11px;
 }
 </style>
 </head>
@@ -64,75 +57,33 @@
 
 
 
-<div class="" style="display: none">
-  <input id="origin-input" class="controls" type="text"
-      placeholder="Enter an origin location">
+<div class="container p-3 lightbg">
+  <input id="origin-input" class="controls" type="text" placeholder="Enter origin">
 
-  <input id="destination-input" class="controls" type="text"
-      placeholder="Enter a destination location">
+  <input id="destination-input" class="controls" type="text"placeholder="Enter destination">
 
-  <div id="mode-selector" class="controls">
-    <input type="radio" name="type" id="changemode-walking" checked="checked">
-    <label for="changemode-walking">Walking</label>
-
-    <input type="radio" name="type" id="changemode-transit">
-    <label for="changemode-transit">Transit</label>
-
-    <input type="radio" name="type" id="changemode-driving">
+  <div id="mode-selector" class="controls d-none">
+    <input type="radio" name="type" id="changemode-driving" checked>
     <label for="changemode-driving">Driving</label>
   </div>
 </div>
 
-      <div class="lightbg container mt-5" id="map"></div>
+      <div class="lightbg container" id="map"></div>
 
  <!-- footer -->
  <div id="web-footer"></div>
 <script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script scr="js/churches.js"></script>
 <script>
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script
-// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-var map, infoWindow;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 6
-    });
-    infoWindow = new google.maps.InfoWindow;
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    mapTypeControl: false,
+    center: {lat: -33.8688, lng: 151.2195},
+    zoom: 13
+  });
 
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-
-        infoWindow.setPosition(pos);
-        infoWindow.setContent('Location found :) ');
-        infoWindow.open(map);
-        map.setCenter(pos);
-      }, function() {
-        handleLocationError(true, infoWindow, map.getCenter());
-      });
-    } else {
-      // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow, map.getCenter());
-    }
-    new AutocompleteDirectionsHandler(map);
-  }
-
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-                          'Error: The Geolocation service failed :( ' :
-                          'Error: Your browser doesn\'t support geolocation :( ');
-    infoWindow.open(map);
-  }
-
+  new AutocompleteDirectionsHandler(map);
+}
 
 /**
  * @constructor
@@ -226,6 +177,7 @@ AutocompleteDirectionsHandler.prototype.route = function() {
         }
       });
 };
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEj-GaIT-Q-IHuFIR9co43zVvUBOuxVGs&libraries=places&callback=initMap"
