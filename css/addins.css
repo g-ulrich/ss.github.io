@@ -148,6 +148,49 @@
 	background-color:#f7f7f7;
 }
 
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+   #map {
+    height: 500px;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .controls {
+  margin-top: 1px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-weight: 300;
+  padding:20px;
+  text-overflow: ellipsis;
+  width: 200px;
+  border-left:#113259 solid 4px;
+  background-image: url('../images/icon/search-light.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  margin:10px;
+}
+
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+
 .form {
 	margin-top:20px;
 }

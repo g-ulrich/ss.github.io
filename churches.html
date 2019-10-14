@@ -8,67 +8,42 @@
 <link rel="stylesheet" href="css/header.css"/>
 <meta name="viewport" content="initial-scale=1.0">
 <meta charset="utf-8">
-<style>
-  /* Always set the map height explicitly to define the size of the div
-   * element that contains the map. */
-  #map {
-    height: 500px;
-  }
-  /* Optional: Makes the sample page fill the window. */
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .controls {
-  margin-top: 1px;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-#origin-input,
-#destination-input {
-  background-color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 200px;
-}
-
-
-#origin-input:focus,
-#destination-input:focus {
-  border-color: #4d90fe;
-}
-</style>
 </head>
 <body></body>
 <!-- Header -->
 <div id="web-header"></div>
-<div id="demo"></div>
+
+<div class="parallax-home" style="background-image: url('images/sky1.gif');"></div>
+        <div class="container">
+            <article class="mt-ns bg-w article-padding shadow rounded-sm">
+                <div class="container">
+                    <h1 class="font-weight-bold">Search for Churches</h1>
+                    <a href="https://www.google.com/maps/search/churches+near+me/" title="[Google maps 'Churches Near Me']">
+                      <h4>Visit <img style="height:30px;" src="images/icon/google.png" alt="[Google Icon PNG Royalty Free Transparent]"> maps for a more comprehensive search, <u>here</u>.
+                      <br/>
+                    Or perform your own search manually. </h4>
+                    </a>
+                </div>
+                
+                <div class="container mt-5 mb-3">
+                  <div class="row">
+                      <input id="origin-input" class="controls col" type="text" placeholder="Enter origin...">
+                      <input id="destination-input" class="controls col" type="text"placeholder="Enter destination...">
+                  </div>
+                  
+                  <div id="mode-selector" class="controls d-none">
+                    <input type="radio" name="type" id="changemode-driving" checked>
+                    <label for="changemode-driving">Driving</label>
+                  </div>
+                </div>
+                
+                <div class="lightbg container rounded" id="map"></div>
+                
+            </article>
+        </div>
 
 
 
-
-<div class="container p-3 lightbg">
-  <input id="origin-input" class="controls" type="text" placeholder="Enter origin">
-
-  <input id="destination-input" class="controls" type="text"placeholder="Enter destination">
-
-  <div id="mode-selector" class="controls d-none">
-    <input type="radio" name="type" id="changemode-driving" checked>
-    <label for="changemode-driving">Driving</label>
-  </div>
-</div>
-
-      <div class="lightbg container" id="map"></div>
 
  <!-- footer -->
  <div id="web-footer"></div>
@@ -78,7 +53,7 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeControl: false,
-    center: {lat: -33.8688, lng: 151.2195},
+    center: {lat: 31.7683, lng: 35.2137},
     zoom: 13
   });
 
