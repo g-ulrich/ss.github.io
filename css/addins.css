@@ -1,4 +1,19 @@
 
+.first-letter {
+	margin-top: 0;
+	margin-bottom: 1rem;
+  }
+  
+  .first-letter:first-of-type:first-letter {
+	float: left;
+	font-weight: bold;
+	color: rgb(216, 190, 87);
+	font-size: 500%;
+	line-height: 80%;
+	margin: 0rem 0.2rem ;
+  }
+  
+
 .bg-w {
 	background-color:#fff;
 }
