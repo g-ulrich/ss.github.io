@@ -32,12 +32,41 @@
         <div id="web-header"></div>
       
         <!-- Main -->
-            
+        <div class="parallax-home" style="background-image: url('images/sky1.gif');"></div>
+        <div class="container">
+            <article class="mt-ns bg-w article-padding shadow rounded-sm">
+                    <header> 
+                           <h1 class="pb-2 text-center font-weight-bold">Chat <i class="fas fa-comments"></i></h1> 
+                           <h4 class="mb-5 color-gold text-center p-1">But be doers of the word, and not hearers only, deceiving yourselves. - [James 1:22]</h4>
+                    </header>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div id="disqus_thread"></div>
+            </article>
+        </div>
 
         <!-- footer -->
        <div id="web-footer"></div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'https://servingsilent.netlify.com/chat.html';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'chat'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://servingsilent.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
 </body>
 </html>
