@@ -37,11 +37,60 @@
             <article class="mt-ns bg-w article-padding shadow rounded-sm">
                     <header> 
                            <h1 class="pb-2 text-center font-weight-bold">Chat <i class="fas fa-comments"></i></h1> 
-                           <h4 class="mb-5 color-gold text-center p-1">But be doers of the word, and not hearers only, deceiving yourselves. - [James 1:22]</h4>
+                           <!-- <h4 class="mb-5 color-gold text-center p-1">But be doers of the word, and not hearers only, deceiving yourselves. - [James 1:22]</h4> -->
+                           <ul id="tips" class="mt-2 mb-5 p-1 color-gold text-center">
+                            <li>
+                                <h4 >"Bless those who persecute you; bless and do not curse them. "</h4>
+                                <i class="float-right">-Romans 12:14</i>
+                            </li>
+                            <li>
+                                <h4 >"Rather, speaking the truth in love, we are to 
+                                    grow up in every way into him who is the head, into Christ, "</h4>
+                                <i class="float-right">-Ephesians 4:15</i>
+                            </li>
+                            <li>
+                                <h4 >"Know this, my beloved brothers: let every person be 
+                                    quick to hear, slow to speak, slow to anger; "</h4>
+                                <i class="float-right">-James 1:19</i>
+                            </li>
+                            <li>
+                                <h4 >"Set a guard, O Lord, over my mouth;
+                                     keep watch over the door of my lips!"</h4>
+                                <i class="float-right">-Psalm 141:3</i>
+                            </li>
+                            <li>
+                                <h4 >"Let your speech always be gracious, seasoned with salt, 
+                                    so that you may know how you ought to answer each person. "</h4>
+                                <i class="float-right">-Colossians 4:6</i>
+                            </li>                    
+                            <li>
+                                <h4 >"Let no corrupting talk come out of your mouths, but only such as is good for building up, 
+                                    as fits the occasion, that it may give grace to those who hear. "</h4>
+                                <i class="float-right">-Ephesians 4:29</i>
+                            </li>
+                            <li>
+                                <h4 >"A gentle answer turns away wrath,
+                                        but a harsh word stirs up anger."</h4>
+                                <i class="float-right">-Proverbs 15: 1</i>
+                            </li>                    
+                            <li>
+                                <h4 >"From the fruit of their mouth a person’s stomach is filled;
+                                        with the harvest of their lips they are satisfied."</h4>
+                                <i class="float-right">-Proverbs 18:20</i>
+                            </li>
+                            <li>
+                                <h4 >"Gold there is, and rubies in abundance,
+                                        but lips that speak knowledge are a rare jewel."</h4>
+                                <i class="float-right">-Proverbs 20:15</i>
+                            </li>
+                            <li>
+                                <h4 >“A man who bears false witness against 
+                                    his neighbor is like a war club, or a sword, or a 
+                                    sharp arrow.”</h4>
+                                <i class="float-right">-Proverbs 25:18</i>
+                            </li>
+                    </ul>
                     </header>
-                    <br/>
-                    <br/>
-                    <br/>
                     <div id="disqus_thread"></div>
             </article>
         </div>
@@ -68,5 +117,37 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
+<script type="text/javascript">
+
+        this.randomtip = function(){
+        
+            var pause = 15000; // define the pause for each tip (in milliseconds) Feel free to make the pause longer so users can have time to read the tips :)
+            var length = $("#tips li").length; 
+            var temp = -1;		
+        
+            this.getRan = function(){
+                // get the random number
+                var ran = Math.floor(Math.random()*length) + 1;
+                return ran;
+            };
+            this.show = function(){
+                var ran = getRan();
+                // to avoid repeating tips we need to check 
+                while (ran == temp){
+                    ran = getRan();
+                }; 
+                temp = ran;
+                $("#tips li").hide();	
+                $("#tips li:nth-child(" + ran + ")").fadeIn("fast");		
+            };
+            // initiate the script and also set an interval
+            show(); setInterval(show,pause);
+            
+        };
+        
+        $(document).ready(function(){	
+            randomtip();
+        });
+        </script>
 </body>
 </html>
