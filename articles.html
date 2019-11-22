@@ -116,7 +116,7 @@
                     <div class="row">
                             <div class="col-lg-8 mb-4"><!-- insert post -->
 
-                                    <div class="col overflow-hidden b-b shadow-hover bg-w">
+                                    <!-- <div class="col overflow-hidden b-b shadow-hover bg-w">
                                       <article class="tiny-article">
                                         <a href="articles/template-article.html">
                                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
@@ -131,7 +131,7 @@
                                       </article>
                                       <div class="position-absolute white-bottom-blur"></div>
                                     </div>
-
+ -->
 
 
 
@@ -142,11 +142,11 @@
 
                                  
                                             
-                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a">
+                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a random">
                                                   <a href="articles/template-article.html">
                                                       <div class="pl-0 pt-2 pb-2 col-sm-7">
                                                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
-                                                          <h3 class="mt-0">What Does It Mean To Serve God? </h3>
+                                                          <h4 class="mt-0">What Does It Mean To Serve God? </h4>
                                                           <div class="article-author-time pt-3">  
                                                               <img class="author-icon" src="images/icon/authors/gulrich.jpg"alt="[jhj]"/> <span>Gabriel Ulrich</span> <aside class="float-right hide767">September 1<sup>st</sup><time> 9:39 pm</time></aside>  					
                                                           </div> 
@@ -155,11 +155,11 @@
                                                   </a>
                                             </article>
                                 
-                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a">
+                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a random">
                                                     <a href="articles/template-article.html">
                                                         <div class="pl-0 pt-2 pb-2 col-sm-7">
                                                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
-                                                          <h3 class="mt-0">2222Timplate Template sfvdf gd fd fg  jgvgvv hgv hgvh vhg vhg </h3>
+                                                          <h4 class="mt-0">2222Timplate Template sfvdf gd fd fg  jgvgvv hgv hgvh vhg vhg </h4>
                                                           <div class="article-author-time pt-3">  
                                                               <img class="author-icon" src="images/icon/authors/gulrich.jpg"alt="[jhj]"/> <span>Gabriel Ulrich</span> <aside class="float-right hide767">September 1<sup>st</sup><time> 9:39 pm</time></aside>  					
                                                           </div> 
@@ -168,11 +168,11 @@
                                                   </a>
                                             </article>
                                 
-                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a">
+                                            <article class="col mt-3 mb-3 shadow-hover bg-w black-a random">
                                                     <a href="articles/template-article.html">
                                                         <div class="pl-0 pt-2 pb-2 col-sm-7">
                                                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
-                                                          <h3 class="mt-0">33333plate sfvdf gd fd fv dfg dfg  jgvgvv hgv hgvh vhg vhg </h3>
+                                                          <h4 class="mt-0">33333plate sfvdf gd fd fv dfg dfg  jgvgvv hgv hgvh vhg vhg </h4>
                                                           <div class="article-author-time pt-3">  
                                                               <img class="author-icon" src="images/icon/authors/gulrich.jpg"alt="[jhj]"/> <span>Gabriel Ulrich</span> <aside class="float-right hide767">September 1<sup>st</sup><time> 9:39 pm</time></aside>  					
                                                           </div> 
@@ -213,6 +213,14 @@
         <script src="js/main.js"></script>
         <script src="js/articleshome.js"></script>
         <script type="text/javascript">this.randomtip = function(){var length = $("#home-articles .ra").length;var ran = Math.floor(Math.random()*length) + 1;$("#home-articles .ra:nth-child(" + ran + ")").show();};$(document).ready(function(){randomtip();});</script>
-  
+        <script>
+            var cards = $(".random");
+            for(var i = 0; i < cards.length; i++){
+                var target = Math.floor(Math.random() * cards.length -1) + 1;
+                var target2 = Math.floor(Math.random() * cards.length -1) +1;
+                cards.eq(target).before(cards.eq(target2));
+            }
+        </script>
+
 </body>
 </html>
