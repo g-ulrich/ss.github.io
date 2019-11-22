@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#web-rightSideBar").load("common/articlesHomeSearch.html");
+    $("#web-search").load("common/search.html");
     $("#web-resources").load("common/resources.html");
     $("#articleSearchInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
