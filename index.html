@@ -29,7 +29,320 @@
     <meta name="theme-color" content="#26619c"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+    .moving-gradient {
+	  width: 100%;
+	  height: 400px;
+	  /* Background: */
+	  background: -webkit-radial-gradient(50% 50%, circle cover, #113259, #fff);
+	  -webkit-animation: flow 10s infinite;
+}
 
+@-webkit-keyframes flow {
+  0% {
+    background: -webkit-radial-gradient(0% 0%, circle cover, #113259, #fff);
+  }
+  1% {
+    background: -webkit-radial-gradient(1% 1%, circle cover, #113259, #fff);
+  }
+  2% {
+    background: -webkit-radial-gradient(2% 2%, circle cover, #113259, #fff);
+  }
+  3% {
+    background: -webkit-radial-gradient(3% 3%, circle cover, #113259, #fff);
+  }
+  4% {
+    background: -webkit-radial-gradient(4% 4%, circle cover, #113259, #fff);
+  }
+  5% {
+    background: -webkit-radial-gradient(5% 5%, circle cover, #113259, #fff);
+  }
+  6% {
+    background: -webkit-radial-gradient(6% 6%, circle cover, #113259, #fff);
+  }
+  7% {
+    background: -webkit-radial-gradient(7% 7%, circle cover, #113259, #fff);
+  }
+  8% {
+    background: -webkit-radial-gradient(8% 8%, circle cover, #113259, #fff);
+  }
+  9% {
+    background: -webkit-radial-gradient(9% 9%, circle cover, #113259, #fff);
+  }
+  10% {
+    background: -webkit-radial-gradient(10% 10%, circle cover, #113259, #fff);
+  }
+  11% {
+    background: -webkit-radial-gradient(11% 11%, circle cover, #113259, #fff);
+  }
+  12% {
+    background: -webkit-radial-gradient(12% 12%, circle cover, #113259, #fff);
+  }
+  13% {
+    background: -webkit-radial-gradient(13% 13%, circle cover, #113259, #fff);
+  }
+  14% {
+    background: -webkit-radial-gradient(14% 14%, circle cover, #113259, #fff);
+  }
+  15% {
+    background: -webkit-radial-gradient(15% 15%, circle cover, #113259, #fff);
+  }
+  16% {
+    background: -webkit-radial-gradient(16% 16%, circle cover, #113259, #fff);
+  }
+  17% {
+    background: -webkit-radial-gradient(17% 17%, circle cover, #113259, #fff);
+  }
+  18% {
+    background: -webkit-radial-gradient(18% 18%, circle cover, #113259, #fff);
+  }
+  19% {
+    background: -webkit-radial-gradient(19% 19%, circle cover, #113259, #fff);
+  }
+  20% {
+    background: -webkit-radial-gradient(20% 20%, circle cover, #113259, #fff);
+  }
+  21% {
+    background: -webkit-radial-gradient(21% 21%, circle cover, #113259, #fff);
+  }
+  22% {
+    background: -webkit-radial-gradient(22% 22%, circle cover, #113259, #fff);
+  }
+  23% {
+    background: -webkit-radial-gradient(23% 23%, circle cover, #113259, #fff);
+  }
+  24% {
+    background: -webkit-radial-gradient(24% 24%, circle cover, #113259, #fff);
+  }
+  25% {
+    background: -webkit-radial-gradient(25% 25%, circle cover, #113259, #fff);
+  }
+  26% {
+    background: -webkit-radial-gradient(26% 26%, circle cover, #113259, #fff);
+  }
+  27% {
+    background: -webkit-radial-gradient(27% 27%, circle cover, #113259, #fff);
+  }
+  28% {
+    background: -webkit-radial-gradient(28% 28%, circle cover, #113259, #fff);
+  }
+  29% {
+    background: -webkit-radial-gradient(29% 29%, circle cover, #113259, #fff);
+  }
+  30% {
+    background: -webkit-radial-gradient(30% 30%, circle cover, #113259, #fff);
+  }
+  31% {
+    background: -webkit-radial-gradient(31% 31%, circle cover, #113259, #fff);
+  }
+  32% {
+    background: -webkit-radial-gradient(32% 32%, circle cover, #113259, #fff);
+  }
+  33% {
+    background: -webkit-radial-gradient(33% 33%, circle cover, #113259, #fff);
+  }
+  34% {
+    background: -webkit-radial-gradient(34% 34%, circle cover, #113259, #fff);
+  }
+  35% {
+    background: -webkit-radial-gradient(35% 35%, circle cover, #113259, #fff);
+  }
+  36% {
+    background: -webkit-radial-gradient(36% 36%, circle cover, #113259, #fff);
+  }
+  37% {
+    background: -webkit-radial-gradient(37% 37%, circle cover, #113259, #fff);
+  }
+  38% {
+    background: -webkit-radial-gradient(38% 38%, circle cover, #113259, #fff);
+  }
+  39% {
+    background: -webkit-radial-gradient(39% 39%, circle cover, #113259, #fff);
+  }
+  40% {
+    background: -webkit-radial-gradient(40% 40%, circle cover, #113259, #fff);
+  }
+  41% {
+    background: -webkit-radial-gradient(41% 41%, circle cover, #113259, #fff);
+  }
+  42% {
+    background: -webkit-radial-gradient(42% 42%, circle cover, #113259, #fff);
+  }
+  43% {
+    background: -webkit-radial-gradient(43% 43%, circle cover, #113259, #fff);
+  }
+  44% {
+    background: -webkit-radial-gradient(44% 44%, circle cover, #113259, #fff);
+  }
+  45% {
+    background: -webkit-radial-gradient(45% 45%, circle cover, #113259, #fff);
+  }
+  46% {
+    background: -webkit-radial-gradient(46% 46%, circle cover, #113259, #fff);
+  }
+  47% {
+    background: -webkit-radial-gradient(47% 47%, circle cover, #113259, #fff);
+  }
+  48% {
+    background: -webkit-radial-gradient(48% 48%, circle cover, #113259, #fff);
+  }
+  49% {
+    background: -webkit-radial-gradient(49% 49%, circle cover, #113259, #fff);
+  }
+  50% {
+    background: -webkit-radial-gradient(50% 50%, circle cover, #113259, #fff);
+  }
+  51% {
+    background: -webkit-radial-gradient(51% 51%, circle cover, #113259, #fff);
+  }
+  52% {
+    background: -webkit-radial-gradient(52% 52%, circle cover, #113259, #fff);
+  }
+  53% {
+    background: -webkit-radial-gradient(53% 53%, circle cover, #113259, #fff);
+  }
+  54% {
+    background: -webkit-radial-gradient(54% 54%, circle cover, #113259, #fff);
+  }
+  55% {
+    background: -webkit-radial-gradient(55% 55%, circle cover, #113259, #fff);
+  }
+  56% {
+    background: -webkit-radial-gradient(56% 56%, circle cover, #113259, #fff);
+  }
+  57% {
+    background: -webkit-radial-gradient(57% 57%, circle cover, #113259, #fff);
+  }
+  58% {
+    background: -webkit-radial-gradient(58% 58%, circle cover, #113259, #fff);
+  }
+  59% {
+    background: -webkit-radial-gradient(59% 59%, circle cover, #113259, #fff);
+  }
+  60% {
+    background: -webkit-radial-gradient(60% 60%, circle cover, #113259, #fff);
+  }
+  61% {
+    background: -webkit-radial-gradient(61% 61%, circle cover, #113259, #fff);
+  }
+  62% {
+    background: -webkit-radial-gradient(62% 62%, circle cover, #113259, #fff);
+  }
+  63% {
+    background: -webkit-radial-gradient(63% 63%, circle cover, #113259, #fff);
+  }
+  64% {
+    background: -webkit-radial-gradient(64% 64%, circle cover, #113259, #fff);
+  }
+  65% {
+    background: -webkit-radial-gradient(65% 65%, circle cover, #113259, #fff);
+  }
+  66% {
+    background: -webkit-radial-gradient(66% 66%, circle cover, #113259, #fff);
+  }
+  67% {
+    background: -webkit-radial-gradient(67% 67%, circle cover, #113259, #fff);
+  }
+  68% {
+    background: -webkit-radial-gradient(68% 68%, circle cover, #113259, #fff);
+  }
+  69% {
+    background: -webkit-radial-gradient(69% 69%, circle cover, #113259, #fff);
+  }
+  70% {
+    background: -webkit-radial-gradient(70% 70%, circle cover, #113259, #fff);
+  }
+  71% {
+    background: -webkit-radial-gradient(71% 71%, circle cover, #113259, #fff);
+  }
+  72% {
+    background: -webkit-radial-gradient(72% 72%, circle cover, #113259, #fff);
+  }
+  73% {
+    background: -webkit-radial-gradient(73% 73%, circle cover, #113259, #fff);
+  }
+  74% {
+    background: -webkit-radial-gradient(74% 74%, circle cover, #113259, #fff);
+  }
+  75% {
+    background: -webkit-radial-gradient(75% 75%, circle cover, #113259, #fff);
+  }
+  76% {
+    background: -webkit-radial-gradient(76% 76%, circle cover, #113259, #fff);
+  }
+  77% {
+    background: -webkit-radial-gradient(77% 77%, circle cover, #113259, #fff);
+  }
+  78% {
+    background: -webkit-radial-gradient(78% 78%, circle cover, #113259, #fff);
+  }
+  79% {
+    background: -webkit-radial-gradient(79% 79%, circle cover, #113259, #fff);
+  }
+  80% {
+    background: -webkit-radial-gradient(80% 80%, circle cover, #113259, #fff);
+  }
+  81% {
+    background: -webkit-radial-gradient(81% 81%, circle cover, #113259, #fff);
+  }
+  82% {
+    background: -webkit-radial-gradient(82% 82%, circle cover, #113259, #fff);
+  }
+  83% {
+    background: -webkit-radial-gradient(83% 83%, circle cover, #113259, #fff);
+  }
+  84% {
+    background: -webkit-radial-gradient(84% 84%, circle cover, #113259, #fff);
+  }
+  85% {
+    background: -webkit-radial-gradient(85% 85%, circle cover, #113259, #fff);
+  }
+  86% {
+    background: -webkit-radial-gradient(86% 86%, circle cover, #113259, #fff);
+  }
+  87% {
+    background: -webkit-radial-gradient(87% 87%, circle cover, #113259, #fff);
+  }
+  88% {
+    background: -webkit-radial-gradient(88% 88%, circle cover, #113259, #fff);
+  }
+  89% {
+    background: -webkit-radial-gradient(89% 89%, circle cover, #113259, #fff);
+  }
+  90% {
+    background: -webkit-radial-gradient(90% 90%, circle cover, #113259, #fff);
+  }
+  91% {
+    background: -webkit-radial-gradient(91% 91%, circle cover, #113259, #fff);
+  }
+  92% {
+    background: -webkit-radial-gradient(92% 92%, circle cover, #113259, #fff);
+  }
+  93% {
+    background: -webkit-radial-gradient(93% 93%, circle cover, #113259, #fff);
+  }
+  94% {
+    background: -webkit-radial-gradient(94% 94%, circle cover, #113259, #fff);
+  }
+  95% {
+    background: -webkit-radial-gradient(95% 95%, circle cover, #113259, #fff);
+  }
+  96% {
+    background: -webkit-radial-gradient(96% 96%, circle cover, #113259, #fff);
+  }
+  97% {
+    background: -webkit-radial-gradient(97% 97%, circle cover, #113259, #fff);
+  }
+  98% {
+    background: -webkit-radial-gradient(98% 98%, circle cover, #113259, #fff);
+  }
+  
+  
+  
+
+  
+}
+</style>
 </head>
 <body>
 
@@ -44,7 +357,8 @@
       
 
         <!-- Main -->
-        <div class="jumbotron position-absolute text-center jumbotron-header text-white">
+        
+        <!-- <div class="jumbotron position-absolute text-center jumbotron-header text-white">
             <h1>Serving <span class="jumbo-brand-silent">Silent</span> <img height="80px"src="images/icon/brand.png"/></h1>      
             <h2>In An Age of Information Without Application</h2>
             <section class="mt-4 mb-3">
@@ -52,21 +366,21 @@
                 <a href="action.html"><button class="btn btn-primary large-btn">Action »</button></a>
                 <a href="pictures.html"><button class="btn btn-primary large-btn">Pictures »</button></a>
             </section>
-        </div>    
-
+        </div>     -->
+        <!-- <div style="height:400px;box-shadow:0px 0px 20px rgba(0, 0, 0, 0.433) inset; background-color:rgb(250, 250, 250);"></div> -->
        
-        <div class="parallax-home" style="background-image: url('images/sky1.gif');"></div>
-        
+        <!-- <div class="parallax-home" style="background-image: url('images/sky1.gif');"></div> -->
+        <!-- <div class="moving-gradient"></div> -->
 
          <!-- Page Content -->
         <div class="container">
             
-
+            
           <div class="row mt-5">
             <div id="home-articles">
             <article class="col-12 mt-5 mb-5 ra d-none black-a">
                   <a href="#">
-                      <div class="col-sm-7">
+                      <div class="col-sm-7 pl-0">
                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
                           <h3 class="mt-0 home-title">What Does It Mean To Serve God? </h3>
                           <div class="article-author-time pt-3">  
@@ -79,7 +393,7 @@
 
             <article class="col-12 mt-5 mb-5 ra d-none black-a">
                   <a href="#">
-                      <div class="col-sm-7">
+                      <div class="col-sm-7 pl-0">
                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
                           <h3 class="mt-0 home-title">2222Timplate Template sfvdf gd fd fg  jgvgvv hgv hgvh vhg vhg </h3>
                           <div class="article-author-time pt-3">  
@@ -92,7 +406,7 @@
 
             <article class="col-12 mt-5 mb-5 ra d-none black-a">
                   <a href="#">
-                      <div class="col-sm-7">
+                      <div class="col-sm-7 pl-0">
                           <div class="descriptor"><i class="fas fa-newspaper"></i> Article</div> 
                           <h3 class="mt-0 home-title">33333plate sfvdf gd fd fv dfg dfg  jgvgvv hgv hgvh vhg vhg </h3>
                           <div class="article-author-time pt-3">  
@@ -107,36 +421,9 @@
 
 </div><!-- /.container --> 
 
-    <div class="bg-b text-white">
-        <div class="container">
-            <div class="row mt-5 mb-5 pt-5 pb-3">
-                <div class="col-md-8 mb-5 mt-4">
-                  <h2 class="bl-gold mb-3">Why Serving Silent?</h2>
-                  <p>Between 1937 and 2012 and estimated 1,600 bodies have been found floating in 
-                        the San Francisco Bay. The reason for this grim reality is due to those who 
-                        commit suicide every year by jumping off of the Golden Gate Bridge. 
-                        In the same time frame thousands of others have committed suicide in 
-                        a Japanese forest called Aokigahara. <p>
-                     
-        
-                 <div class="position-absolute white-bottom-blur-footer"><a href="why.html" class="position-absolute bottom">More &raquo;</a></div>
-                </div>
-                <div class="col-md-4 mb-5 pl-5s mt-4">
-                  <h2 class="bl-gold mb-3">Contact</h2>
-                  <address>
-                    <a href="chat.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-comments"></i> Chat With Others</span></button></a><br/>
-                    <a href="contact.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-envelope-open-text"></i> E-Mail Us</span></button></a><br/>
-                    <a href="resources.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-keyboard"></i> Resources</span></button></a>
-                  </address>
-                </div>
-              </div>
-              <!-- /.row -->
-        </div><!-- /.container --> 
-    </div>
 
-
-
-
+<!-- <i class="fas fa-mountain"></i> -->
+<i class="big-icon fas fa-bible"></i> 
 
 <section class="mt-5 mb-5 pt-2 pb-5">
 
@@ -348,6 +635,40 @@
         </div>
 
 </section>
+
+
+
+<div class="bg-b text-white">
+  <div class="container">
+      <div class="row mt-5 mb-5 pt-5 pb-3">
+          <div class="col-md-8 mb-5 mt-4">
+            <h2 class="bl-gold mb-3">Why Serving Silent?</h2>
+            <p>Between 1937 and 2012 and estimated 1,600 bodies have been found floating in 
+                  the San Francisco Bay. The reason for this grim reality is due to those who 
+                  commit suicide every year by jumping off of the Golden Gate Bridge. 
+                  In the same time frame thousands of others have committed suicide in 
+                  a Japanese forest called Aokigahara. <p>
+               
+  
+           <div class="position-absolute white-bottom-blur-footer"><a href="why.html" class="position-absolute bottom">More &raquo;</a></div>
+          </div>
+          <div class="col-md-4 mb-5 pl-5s mt-4">
+            <h2 class="bl-gold mb-3">Contact</h2>
+            <address>
+              <a href="chat.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-comments"></i> Chat With Others</span></button></a><br/>
+              <a href="contact.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-envelope-open-text"></i> E-Mail Us</span></button></a><br/>
+              <a href="resources.html"><button class="btn btn-primary w-100 mt-1 btn-animation"><span><i class="fas fa-keyboard"></i> Resources</span></button></a>
+            </address>
+          </div>
+        </div>
+        <!-- /.row -->
+  </div><!-- /.container --> 
+</div>
+
+
+<div style="height:30px"></div>
+
+
 
         <!-- footer -->
        <div id="web-footer"></div>
