@@ -74,7 +74,7 @@ pyzmq==15.2.0
 queuelib==1.2.2
 requests==2.10.0
 s2sphere==0.2.4
-scapy==2.3.2
+scapy==2.4.1
 Scrapy==1.0.3
 selenium==2.53.6
 service-identity==14.0.0
