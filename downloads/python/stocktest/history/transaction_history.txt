@@ -1,0 +1,233 @@
+DontDelete
+At 16.30: None - Market Closed Sell 90.48
+At 16.28: None - Market Closed Sell 91.44
+At 16.26: None - Market Closed Sell 91.44
+At 16.24: None - Market Closed Sell 93.1
+At 16.22: None - Market Closed Sell 93.1
+At 16.20: None - Market Closed Sell 91.02
+At 16.18: None - Market Closed Sell 91.11
+At 16.16: None - Market Closed Sell 90.94
+At 16.14: None - Market Closed Sell 87.01
+At 16.12: None - Market Closed Sell 90.62
+At 16.10: None - Market Closed Sell 93.72
+At 16.08: None - Market Closed Sell 92.93
+At 16.06: None - Market Closed Sell 92.81
+At 16.04: None - Market Closed Sell 92.99
+At 16.02: None - Market Closed Sell 96.23
+At 16.00: Potential buy SPY Sell 96.26
+At 15.58: Straddle Sell 88.86
+At 15.56: Straddle Sell 87.0
+At 15.54: Straddle Sell 87.51
+At 15.52: Straddle Sell 86.3
+At 15.50: hold Sell 84.63
+At 15.48: Potential buy SPY Going up 72.22
+At 15.46: Potential buy SPY Going up 69.22
+At 15.44: Potential buy SPY Going up 70.82
+At 15.42: Potential buy SPY Going up 69.73
+At 15.40: Potential buy SPY Going up 69.28
+At 15.38: Straddle Going up 71.2
+At 15.36: Straddle Going up 72.58
+At 15.34: Straddle Going up 66.67
+At 15.32: Potential buy SPY Going up 64.15
+At 15.30: Potential buy SPY Going up 60.42
+At 15.28: Straddle Going up 59.34
+At 15.26: Straddle Going up 57.28
+At 15.24: Straddle Going up 74.31
+At 15.22: Straddle Going up 73.57
+At 15.20: Potential buy SPY Going up 68.64
+At 15.18: Straddle Sell 80.83
+At 15.16: Potential buy SPY Sell 76.99
+At 15.14: Potential buy SPY Sell 79.55
+At 15.12: Potential buy SPY Sell 79.37
+At 15.10: Potential buy SPY Sell 76.69
+At 15.08: Potential buy SPY Sell 81.47
+At 15.06: Potential buy SPY Sell 83.31
+At 15.04: Potential buy SPY Sell 93.14
+At 15.02: Potential buy SPY Sell 92.71
+At 15.00: Potential buy SPY Sell 92.71
+At 14.58: Potential buy SPY Sell 93.46
+At 14.56: Potential buy SPY Sell 93.69
+At 14.54: Potential buy SPY Sell 97.39
+At 14.52: Potential buy SPY Sell 97.48
+At 14.50: Potential buy SPY Sell 97.3
+At 14.48: Potential buy SPY Sell 97.35
+At 14.46: Potential buy SPY Sell 85.94
+At 14.44: Potential buy SPY Sell 98.47
+At 14.42: Potential buy SPY Sell 98.0
+At 14.40: Potential buy SPY Sell 95.4
+At 14.38: Potential buy SPY Sell 98.3
+At 14.36: Potential buy SPY Sell 98.28
+At 14.34: Potential buy SPY Sell 78.74
+At 14.32: Potential buy SPY Sell 75.92
+At 14.30: Potential buy SPY Sell 78.11
+At 14.28: Potential buy SPY Sell 83.62
+At 14.26: Potential buy SPY Sell 80.74
+At 14.24: Straddle Sell 75.59
+At 14.22: Straddle Sell 75.36
+At 14.20: Potential buy SPY Going up 70.84
+At 14.18: Potential buy SPY Going up 69.18
+At 14.16: Potential buy SPY Going up 70.84
+At 14.14: Potential buy SPY Going up 63.85
+At 14.12: Potential buy SPY Going up 64.79
+At 14.10: Potential buy SPY Going up 62.61
+At 14.08: Straddle Going up 58.16
+At 14.06: Straddle Going up 55.8
+At 14.04: Straddle Going up 60.5
+At 14.02: Straddle Going up 60.74
+At 14.00: Straddle Going up 56.05
+At 13.58: Straddle Going up 54.61
+At 13.56: Straddle Going down 49.63
+At 13.54: Straddle Going down 43.39
+At 13.52: Straddle Going up 50.0
+At 13.50: Straddle Going up 52.68
+At 13.48: Potential sell SPY Going up 44.88
+At 13.46: Potential sell SPY Going down 33.96
+At 13.44: Potential sell SPY Going down 21.64
+At 13.42: Potential sell SPY Going down 23.2
+At 13.40: Potential sell SPY Going down 25.0
+At 13.38: Potential sell SPY Going down 19.05
+At 13.36: Potential sell SPY Going down 18.35
+At 13.34: Potential sell SPY Going down 23.3
+At 13.32: Potential sell SPY Going down 23.76
+At 13.30: Potential sell SPY Going down 26.09
+At 13.28: Potential sell SPY Going down 22.02
+At 13.26: Potential sell SPY Going down 23.53
+At 13.24: Potential sell SPY Going down 27.82
+At 13.22: buy SPY Going down 29.99
+At 13.20: Potential sell SPY Buy 13.39
+At 13.18: Potential sell SPY Going down 38.39
+At 13.16: buy SPY Going down 41.96
+At 13.14: Straddle Going down 44.95
+At 13.12: Straddle Going down 45.79
+At 13.10: Straddle Going down 46.23
+At 13.08: Straddle Going down 44.55
+At 13.06: buy SPY Going down 44.55
+At 13.04: Potential buy SPY Going down 47.57
+At 13.02: Potential buy SPY Going down 48.51
+At 13.00: Potential buy SPY Going up 69.01
+At 12.58: Potential buy SPY Sell 78.64
+At 12.56: Potential buy SPY Sell 75.96
+At 12.54: Potential buy SPY Going up 70.18
+At 12.52: Potential buy SPY Going up 70.43
+At 12.50: Potential buy SPY Going up 68.81
+At 12.48: Potential buy SPY Going up 72.95
+At 12.46: Potential buy SPY Sell 75.42
+At 12.44: Straddle Going up 72.8
+At 12.42: Straddle Sell 76.23
+At 12.38: hold Going up 70.71
+At 12.36: Potential buy SPY Going up 67.05
+At 12.34: Potential buy SPY Going up 69.79
+At 12.32: Potential buy SPY Going up 70.41
+At 12.30: Potential buy SPY Going up 69.15
+At 12.28: Potential buy SPY Sell 82.76
+At 12.26: Potential buy SPY Sell 85.57
+At 12.24: buy SPY Sell 79.81
+At 12.22: Straddle Sell 86.27
+At 12.20: buy SPY Sell 85.87
+At 12.18: Straddle Sell 88.52
+At 12.16: buy SPY Sell 86.0
+At 12.14: buy SPY Going up 45.56
+At 12.12: Straddle Going up 47.13
+At 12.10: Straddle Going up 48.28
+At 12.08: Potential sell SPY Going up 40.61
+At 12.06: Straddle Going down 35.42
+At 12.04: Straddle Going down 43.75
+At 12.02: Straddle Going down 41.29
+At 12.00: hold Going down 46.23
+At 11.58: Straddle Going down 36.37
+At 11.56: Straddle Going down 37.02
+At 11.54: Potential sell SPY Going down 41.67
+At 11.52: Potential sell SPY Going down 42.32
+At 11.50: Potential sell SPY Going down 38.4
+At 11.48: Potential sell SPY Going down 38.89
+At 11.46: Potential sell SPY Going down 38.38
+At 11.44: Potential sell SPY Going down 34.4
+At 11.42: Potential sell SPY Going down 32.09
+At 11.40: Potential sell SPY Going down 34.26
+At 11.38: Straddle Going down 47.06
+At 11.36: Straddle Going down 39.07
+At 11.34: Potential buy SPY Going down 54.2
+At 11.32: Potential buy SPY Going up 64.55
+At 11.30: buy SPY Going up 60.43
+At 11.28: Potential buy SPY Going up 62.83
+At 11.26: Potential buy SPY Going up 63.39
+At 11.24: Potential buy SPY Going up 72.23
+At 11.22: Potential buy SPY Going up 70.68
+At 11.20: Potential buy SPY Going up 70.4
+At 11.18: Potential buy SPY Going up 62.07
+At 11.16: Potential buy SPY Going up 62.89
+At 11.14: Potential buy SPY Going up 63.4
+At 11.12: Potential buy SPY Going up 63.91
+At 11.10: Potential buy SPY Going up 61.7
+At 11.08: Potential buy SPY Going up 69.56
+At 11.06: Potential buy SPY Going up 67.52
+At 11.04: Straddle Going up 61.15
+At 11.02: Straddle Going up 63.62
+At 11.00: Straddle Going up 63.62
+At 10.58: Potential sell SPY Going up 54.27
+At 10.56: Potential sell SPY Going up 48.46
+At 10.54: Potential sell SPY Going down 29.32
+At 10.52: Potential sell SPY Going down 25.8
+At 10.50: Potential sell SPY Going down 26.87
+At 10.48: Potential sell SPY Going down 24.66
+At 10.46: Potential sell SPY Going down 26.87
+At 10.44: Potential sell SPY Going down 21.88
+At 10.42: Potential sell SPY Going down 19.56
+At 10.40: Potential sell SPY Buy 14.11
+At 10.38: Potential sell SPY Going down 26.82
+At 10.36: Potential sell SPY Going down 28.24
+At 10.34: Potential sell SPY Going down 27.04
+At 10.32: Potential sell SPY Going down 25.0
+At 10.30: Potential sell SPY Going down 28.4
+At 10.28: Potential sell SPY Going down 21.07
+At 10.26: Potential sell SPY Going down 15.81
+At 10.24: Potential sell SPY Going down 17.07
+At 10.23: Potential sell SPY Going down 16.47
+At 10.22: Potential sell SPY Going down 18.06
+At 10.22: Potential sell SPY Going down 18.67
+At 10.20: Potential sell SPY Going down 18.39
+At 10.18: Straddle Going down 25.42
+At 10.16: Straddle Going down 26.01
+At 10.14: Straddle Going down 41.08
+At 10.13: Straddle Going down 41.22
+At 10.12: Straddle Going down 48.650000000000006
+At 10.10: Potential sell SPY Going down 53.010000000000005
+At 10.08: Straddle Going down 47.99
+At 10.06: Straddle Going down 46.385000000000005
+At 10.05: Straddle Going down 46.385000000000005
+At 10.04: Straddle Going down 48.095
+At 10.03: Straddle Going down 48.805
+At 10.02: Straddle Going down 47.43
+At 10.02: Straddle Going down 48.805
+At 10.01: Straddle Going down 49.885
+At 10.01: Straddle Going down 45.55
+At 10.00: Straddle Going up 47.415
+At 10.00: Straddle Going up 49.120000000000005
+At 09.54: Potential buy SPY Going down 42.370000000000005
+At 09.54: Straddle Going down 41.12
+At 09.53: Straddle Going down 41.51
+At 09.53: Straddle Going down 41.51
+At 09.52: Straddle Going down 42.72
+At 09.51: Straddle Going down 45.6
+At 09.50: Straddle Going up 51.52
+At 09.48: buy SPY Going up 52.69
+At 09.47: Straddle Going up 42.31
+At 09.47: buy SPY Going up 51.65
+At 09.46: buy SPY Going up 55.33
+At 09.46: buy SPY Going up 42.935
+At 09.46: buy SPY Going up 41.995000000000005
+At 09.44: buy SPY Going up 34.5
+At 09.42: Straddle Going up 34.78
+At 09.40: Straddle Going up 37.31
+At 09.40: Straddle Going up 37.31
+At 09.38: Straddle Going down 28.005000000000003
+At 09.38: Straddle Going up 30.795
+At 09.38: Straddle Going up 30.510000000000005
+At 09.36: buy SPY Going up 31.89
+At 09.36: hold Going up 40.335
+At 09.34: Potential sell SPY Going down 24.564999999999998
+At 09.34: sell SPY Going down 25.849999999999998
+At 09.32: Potential sell SPY Buy 14.0
+At 09.32: Potential sell SPY Buy 14.454999999999998
+At 09.31: Potential sell SPY Going down 18.785
+

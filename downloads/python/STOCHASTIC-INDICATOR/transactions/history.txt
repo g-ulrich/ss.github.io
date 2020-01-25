@@ -1,0 +1,2 @@
+DontDelete
+{'day':'0','signal':'none','stock':'none','time':'0','shares':'0','price':'0','total':'0'}

@@ -1,0 +1,146 @@
+{
+"buy":
+   {
+      "stock": "SPY",
+      "time": "10.18",
+      "num_of_shares": "1",
+      "price_per_share": "327.520100",
+      "total_cost": "327.520100"
+   },
+"buy":
+   {
+      "stock": "SPY",
+      "time": "10.13",
+      "num_of_shares": "1",
+      "price_per_share": "327.510000",
+      "total_cost": "327.510000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "09.32",
+      "num_of_shares": "1",
+      "price_per_share": "327.400000",
+      "total_cost": "327.400000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.27",
+      "num_of_shares": "1",
+      "price_per_share": "327.406800",
+      "total_cost": "327.406800"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.24",
+      "num_of_shares": "1",
+      "price_per_share": "327.440000",
+      "total_cost": "327.440000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.17",
+      "num_of_shares": "1",
+      "price_per_share": "327.502000",
+      "total_cost": "327.502000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.12",
+      "num_of_shares": "1",
+      "price_per_share": "327.440000",
+      "total_cost": "327.440000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.07",
+      "num_of_shares": "1",
+      "price_per_share": "327.340000",
+      "total_cost": "327.340000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "12.02",
+      "num_of_shares": "1",
+      "price_per_share": "327.378700",
+      "total_cost": "327.378700"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.38",
+      "num_of_shares": "1",
+      "price_per_share": "326.950000",
+      "total_cost": "326.950000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.35",
+      "num_of_shares": "1",
+      "price_per_share": "326.940000",
+      "total_cost": "326.940000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.33",
+      "num_of_shares": "1",
+      "price_per_share": "326.980000",
+      "total_cost": "326.980000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.29",
+      "num_of_shares": "1",
+      "price_per_share": "326.960000",
+      "total_cost": "326.960000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.27",
+      "num_of_shares": "1",
+      "price_per_share": "326.828300",
+      "total_cost": "326.828300"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.19",
+      "num_of_shares": "1",
+      "price_per_share": "326.930000",
+      "total_cost": "326.930000"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "11.16",
+      "num_of_shares": "1",
+      "price_per_share": "326.974600",
+      "total_cost": "326.974600"
+   },
+"sell":
+   {
+      "stock": "SPY",
+      "time": "10.36",
+      "num_of_shares": "1",
+      "price_per_share": "326.462000",
+      "total_cost": "326.462000"
+   },
+"example":
+   {
+      "stock": "TQQQ",
+      "time": "13.00",
+      "num_of_shares": "2",
+      "price_per_share": "20",
+      "total": "40"
+   }
+}
